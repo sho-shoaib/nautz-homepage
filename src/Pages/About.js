@@ -80,13 +80,13 @@ const About = () => {
         <div>
           <div className='w-full'>
             <h1
-              className='lg:w-11/12 xs:w-full xs:text-center md:text-left lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl font-bold mb-6 lg:leading-normal md:leading-normal
+              className='lg:w-full xs:w-full xs:text-center md:text-left lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl font-bold mb-6 lg:leading-relaxed md:leading-normal
       sm:leading-normal xs:leading-relaxed'
             >
-              5000 NAUTZ generated from
+              <span className='text-indigo-500'>5000</span> NAUTZ generated from
               <br />
-              <span className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-4xl text-glow'>
-                100,000 posibilities
+              <span className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-4xl'>
+                <span className='text-indigo-500'>100,000</span> posibilities
               </span>
             </h1>
             <p className='lg:text-2xl md:text-xl sm:text-lg xs:text-md font-semibold lg:w-7/12 leading-normal xs:text-center xs:w-9/12 xs:mx-auto md:text-left md:mx-0'>
