@@ -12,6 +12,7 @@ const PagesCombined = () => {
     <>
       <Home />
       <div
+        className='bg-fixed'
         style={{
           background: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('${bgSpaceImgcom}')`,
           backgroundAttachment: "fixed",

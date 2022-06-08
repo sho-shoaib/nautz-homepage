@@ -83,7 +83,7 @@ const About = () => {
               className='lg:w-11/12 xs:w-full xs:text-center md:text-left lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl font-bold mb-6 lg:leading-normal md:leading-normal
       sm:leading-normal xs:leading-relaxed'
             >
-              5000 nautz generated from
+              5000 NAUTZ generated from
               <br />
               <span className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-4xl text-glow'>
                 100,000 posibilities
