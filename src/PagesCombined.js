@@ -11,21 +11,17 @@ const PagesCombined = () => {
   return (
     <>
       <Home />
+      <NavbarHome />
       <div
-        className='bg-fixed'
+        className='h-screen w-screen bg-cover fixed top-0 -z-50'
         style={{
           background: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('${bgSpaceImgcom}')`,
-          backgroundAttachment: "fixed",
-          backgroundRepeat: "repeat",
-          backgroundSize: "cover",
         }}
-      >
-        <NavbarHome />
-        <About />
-        <Roadmap />
-        <Utility />
-        <Faq />
-      </div>
+      />
+      <About />
+      <Roadmap />
+      <Utility />
+      <Faq />
     </>
   );
 };
