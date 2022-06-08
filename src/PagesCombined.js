@@ -13,9 +13,10 @@ const PagesCombined = () => {
       <Home />
       <NavbarHome />
       <div
-        className='h-screen w-screen bg-cover fixed top-0 -z-50'
+        className='h-screen w-screen fixed top-0 -z-50'
         style={{
           background: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('${bgSpaceImgcom}')`,
+          backgroundSize: "cover",
         }}
       />
       <About />
