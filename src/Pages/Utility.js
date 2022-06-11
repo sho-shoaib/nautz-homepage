@@ -61,16 +61,16 @@ const Utility = () => {
           <p className='lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl font-semibold text-center lg:leading-normal md:leading-relaxed sm:leading-relaxed xs:leading-relaxed'>
             Join the community with
             <br />
-            <span className='lg:text-8xl md:text-7xl sm:text-5xl xs:text-4xl text-indigo-400'>
-              utility from day one.
+            <span className='lg:text-7xl md:text-6xl sm:text-4xl xs:text-3xl text-indigo-400'>
+              Utility since the pre-sale!
             </span>
           </p>
         </div>
         <div className='lg:w-3/5 md:w-3/5 sm:w-3/5 xs:w-10/12'>
           <p className='text-center text-xl md:text-xl sm:text-lg xs:text-base font-semibold'>
             NAUTZ will be launching with utility already in place before the
-            presale even begins, with regular sneak peeks and explanations in
-            our discord.
+            presale even begins, and get set go one we begin the presale, with
+            regular sneak peeks and explanations in our discord.
           </p>
         </div>
       </Box>

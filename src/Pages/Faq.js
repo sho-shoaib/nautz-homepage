@@ -11,24 +11,20 @@ import { useAnimation } from "framer-motion";
 
 const data = [
   {
-    ques: "When and where is the mint date?",
-    ans: "-- august on nautz.mint.com",
-  },
-  {
-    ques: "How can I buy NAUTZ NFT?",
-    ans: "Get on the Nautz whitelist or try to mint one on public sale come drop day on opensea.com",
+    ques: "When will the NAUTZ launch?",
+    ans: "It will be launched in July or August.",
   },
   {
     ques: "How many NAUTZ will be there?",
-    ans: "5000",
+    ans: "There will be 5000 NAUTZ minted on the Ethereum Blockchain, and on the top of that there will be 100 Nautz Derivative NFTs created by various NFT artists from all around the globe. The 100 derivative NFTs will have differenty artforms including 2D, 3D, Music, Photography, Traditional, and many more!",
   },
   {
     ques: "How much will be the floor price?",
-    ans: "0.1 to 0.15 eth",
+    ans: "Floor price will be announced soon in our community.",
   },
   {
     ques: "Will NAUTZ have utility?",
-    ans: "Yes, they will. By being a holder you will be granted access to exclusive events, metaverse worlds, airdrops & more.",
+    ans: "Yes, there will be hell of utilities. By being a holder you will be granted access to exclusive events, special inner communties, airdrops & more. More details on the utilities will be announced very soon, buckle your seatbelts!",
   },
 ];
 
@@ -64,6 +60,32 @@ const Faq = () => {
           FAQs
         </p>
         <div className='lg:w-8/12 md:w-full lg:p-0 md:px-25 sm:px-15 xs:px-5'>
+          <Accordion className='glass-faq text-white lg:p-4 md:p-4 sm:p-4 xs:p-2'>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon className='text-white' />}
+              aria-controls='panel1a-content'
+              id='panel1a-header'
+            >
+              <p className='lg:text-xl md:text-xl sm:text-xl xs:text-lg'>
+                How can I buy NAUTZ NFT?
+              </p>
+            </AccordionSummary>
+            <AccordionDetails>
+              <p className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
+                Get on the Nautz whitelist and mint it during the presale at a
+                discounted price or mint during the public sale which will be
+                open for all. You can mint NAUTZ on our website, the detials
+                will be provided soon. Also users can buy and sell NAUTZ on{" "}
+                <a
+                  href='https://opensea.io/collection/nautz'
+                  className='text-indigo-300 underline-offset-1 underline'
+                  target='_blank'
+                >
+                  Opensea.io
+                </a>
+              </p>
+            </AccordionDetails>
+          </Accordion>
           {data.map(({ ques, ans }) => {
             return (
               <Accordion className='glass-faq text-white lg:p-4 md:p-4 sm:p-4 xs:p-2'>

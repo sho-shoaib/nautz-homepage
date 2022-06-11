@@ -81,7 +81,8 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          A collection of 5000 super cool astronauts about to take off soon
+          5000 Super Cool <span className='font-semibold'>AstroNAUTZ</span>{" "}
+          About To Take Off Soon
         </motion.p>
       </div>
       {/* <div

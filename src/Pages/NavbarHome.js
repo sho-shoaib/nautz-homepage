@@ -15,7 +15,7 @@ const NavbarHome = () => {
 
   return (
     <>
-      {width > 800 && (
+      {width > 850 && (
         <nav
           className={`z-50 w-full ${width > 800 && "sticky top-0"}`}
           style={{
@@ -34,6 +34,10 @@ const NavbarHome = () => {
 
               <Link activeClass='active' to='roadmap' spy={true} smooth={true}>
                 <p className='text-xl'>Roadmap</p>
+              </Link>
+
+              <Link activeClass='active' to='team' spy={true} smooth={true}>
+                <p className='text-xl'>Team</p>
               </Link>
 
               <Link
@@ -56,7 +60,7 @@ const NavbarHome = () => {
           </Container>
         </nav>
       )}{" "}
-      {width <= 800 && width > 500 && (
+      {width <= 850 && width > 550 && (
         <>
           <Container
             className='flex items-center justify-between py-4 z-50'
@@ -84,6 +88,10 @@ const NavbarHome = () => {
               <p className='text-xl'>Roadmap</p>
             </Link>
 
+            <Link activeClass='active' to='team' spy={true} smooth={true}>
+              <p className='text-xl'>Team</p>
+            </Link>
+
             <Link activeClass='active' to='utilities' spy={true} smooth={true}>
               <p className='text-xl'>Utilities</p>
             </Link>
@@ -94,7 +102,7 @@ const NavbarHome = () => {
           </Box>
         </>
       )}
-      {width <= 500 && (
+      {width <= 550 && (
         <>
           <div className='z-50 w-full sticky top-0 relative'>
             <Container
@@ -116,7 +124,7 @@ const NavbarHome = () => {
               className={`overflow-hidden absolute w-full ${!isOpen && "h-0"}`}
             >
               <Box
-                className={`w-full border-t-2 border-indigo-700 p-2 child:text-lg child:font-medium child:cursor-pointer child-hover:opacity-80 child:transition child:ease-in flex flex-col gap-5 justify-center py-5 z-20 transition ${
+                className={`w-full border-t-2 border-indigo-700 p-2 child:text-lg child:font-medium child:cursor-pointer child-hover:opacity-80 child:transition child:ease-in flex flex-col gap-4 justify-center py-3 z-20 transition ${
                   isOpen ? "drop" : "up"
                 }`}
                 sx={{
@@ -124,12 +132,12 @@ const NavbarHome = () => {
                 }}
               >
                 <Link activeClass='active' to='home' spy={true} smooth={true}>
-                  <p className='text-xl' onClick={toggle}>
+                  <p className='text-lg' onClick={toggle}>
                     Home
                   </p>
                 </Link>
                 <Link activeClass='active' to='about' spy={true} smooth={true}>
-                  <p className='text-xl' onClick={toggle}>
+                  <p className='text-lg' onClick={toggle}>
                     About
                   </p>
                 </Link>
@@ -139,8 +147,14 @@ const NavbarHome = () => {
                   spy={true}
                   smooth={true}
                 >
-                  <p className='text-xl' onClick={toggle}>
+                  <p className='text-lg' onClick={toggle}>
                     Roadmap
+                  </p>
+                </Link>
+
+                <Link activeClass='active' to='team' spy={true} smooth={true}>
+                  <p className='text-lg' onClick={toggle}>
+                    Team
                   </p>
                 </Link>
 
@@ -150,13 +164,13 @@ const NavbarHome = () => {
                   spy={true}
                   smooth={true}
                 >
-                  <p className='text-xl' onClick={toggle}>
+                  <p className='text-lg' onClick={toggle}>
                     Utilities
                   </p>
                 </Link>
 
                 <Link activeClass='active' to='faq' spy={true} smooth={true}>
-                  <p className='text-xl' onClick={toggle}>
+                  <p className='text-lg' onClick={toggle}>
                     Faq
                   </p>
                 </Link>

@@ -52,17 +52,21 @@ const About = () => {
               What is <span className='title-about'>NAUTZ</span> ?
             </h1>
             <p className='lg:text-xl md:text-xl sm:text-lg xs:text-md font-base md:mb-6 xs:mb-10'>
-              The term beard can be used to describe someone who places bets on
-              behalf of a high roller or a public figure. Some people want or
-              need to stay anonymous and the beards they hire act as a disguise
-              - much like facial hair can help to hide someone's identity.
+              Nautz is a collection of 5000 different NFTs each blended in a
+              unique way. Also on the top of the 5000 NFTs, there will be 100
+              additional NFTs that are made by different types of artists
+              whether it can be 2D, 3D, Traditional, Painter, Photographer, or
+              even music artists. We are using the latest and the most efficient
+              smart contract that is ERC 721A Minting will be in two phases,
+              presale (only for whitelisted wallets) and public sale which will
+              be for everyone.
             </p>
             {width > 900 && (
               <Button
                 component={motion.button}
                 variant='outlined'
                 startIcon={<KeyboardArrowDownIcon />}
-                className='text-indigo-400 border-indigo-300 hover:border-indigo-300'
+                className='text-indigo-400 border-indigo-300 hover:border-indigo-300 hidden'
               >
                 Read more
               </Button>
@@ -90,10 +94,10 @@ const About = () => {
               </span>
             </h1>
             <p className='lg:text-2xl md:text-xl sm:text-lg xs:text-md font-semibold lg:w-7/12 leading-normal xs:text-center xs:w-9/12 xs:mx-auto md:text-left md:mx-0'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Aspernatur ipsa dolor enim soluta illo quis, neque sunt in aliquam
-              consequatur dolore quos quo commodi corporis! Doloremque rerum
-              culpa laborum magni.
+              We created and curated 5000 Nautz that were selected and created
+              from 100,000 Possiblities, each NFT has it's own unique
+              charateristics and traits. Even the common ones have such surreal
+              traits that it goes beyond the expectations of the HODLers!
             </p>
             <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 lg:-mx-3 select-none lg:gap-10 md:gap-8 xs:gap-5 lg:p-20 md:p-10 xs:p-5 mt-8'>
               <div className='bg-slate-200 rounded-lg overflow-hidden'>
