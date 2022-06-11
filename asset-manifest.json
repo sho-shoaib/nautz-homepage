@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nautz-homepage/static/css/main.ab6306ae.css",
-    "main.js": "/nautz-homepage/static/js/main.3be3c162.js",
+    "main.css": "/nautz-homepage/static/css/main.21f497e3.css",
+    "main.js": "/nautz-homepage/static/js/main.96bd72e1.js",
     "static/media/Bg-AstrovidCom.mp4": "/nautz-homepage/static/media/Bg-AstrovidCom.01f43c734a09584b8ccd.mp4",
     "static/media/naut-1_1.png": "/nautz-homepage/static/media/naut-1_1.03d58e6b73b63b0e0d87.png",
     "static/media/naut-5_1.png": "/nautz-homepage/static/media/naut-5_1.6dd39eaca8f586da3132.png",
@@ -12,12 +12,15 @@
     "static/media/bg-AstroImg_1.png": "/nautz-homepage/static/media/bg-AstroImg_1.4fcb7839e522f8c29459.png",
     "static/media/naut-6NoBg_1.png": "/nautz-homepage/static/media/naut-6NoBg_1.e1c53a650280865d938c.png",
     "static/media/bg-spaceImg_1.jpg": "/nautz-homepage/static/media/bg-spaceImg_1.7beda5b11311e694e1f4.jpg",
+    "static/media/team-farhan.JPEG": "/nautz-homepage/static/media/team-farhan.f5608f06422b44638381.JPEG",
+    "static/media/team-shoaib.jpeg": "/nautz-homepage/static/media/team-shoaib.1be900be05c99193dd35.jpeg",
+    "static/media/team-abhay.jpg": "/nautz-homepage/static/media/team-abhay.c5e3c3ed0957109ca0cd.jpg",
     "index.html": "/nautz-homepage/index.html",
-    "main.ab6306ae.css.map": "/nautz-homepage/static/css/main.ab6306ae.css.map",
-    "main.3be3c162.js.map": "/nautz-homepage/static/js/main.3be3c162.js.map"
+    "main.21f497e3.css.map": "/nautz-homepage/static/css/main.21f497e3.css.map",
+    "main.96bd72e1.js.map": "/nautz-homepage/static/js/main.96bd72e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab6306ae.css",
-    "static/js/main.3be3c162.js"
+    "static/css/main.21f497e3.css",
+    "static/js/main.96bd72e1.js"
   ]
 }
