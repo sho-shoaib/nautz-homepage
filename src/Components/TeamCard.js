@@ -5,8 +5,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const TeamCard = ({ name, image, work, insta, twitter, linkedIn }) => {
   return (
-    <div className=' rounded-xl border-8 w-72 justify-self-center border-indigo-200'>
-      <img src={image} alt={name} className='object-cover h-72 w-72' />
+    <div className=' rounded-2xl border-8 w-72 justify-self-center border-indigo-200 overflow-hidden'>
+      <div className='h-72 w-72 overflow-hidden'>
+        <img src={image} alt={name} className='object-cover h-full w-full' />
+      </div>
+
       <div className='bg-indigo-700 flex items-center justify-between p-2 px-4'>
         <div>
           <p className='font-semibold mb-1'>{name}</p>

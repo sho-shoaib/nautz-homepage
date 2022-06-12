@@ -16,6 +16,7 @@ import naut12 from "../assets/compress/naut12.png";
 import naut13 from "../assets/compress/naut13.png";
 import naut1 from "../assets/compress/naut-1_1.png";
 import TitleAbout from "../Components/TitleAbout";
+import ParaAbout from "../Components/ParaAbout";
 
 const About = () => {
   const { width } = useWindowDimensions();
@@ -88,12 +89,7 @@ const About = () => {
         <div>
           <div className='w-full'>
             <TitleAbout />
-            <p className='lg:text-2xl md:text-xl sm:text-lg xs:text-md font-semibold lg:w-7/12 leading-normal xs:text-center xs:w-9/12 xs:mx-auto md:text-left md:mx-0'>
-              We created and curated 5000 Nautz that were selected and created
-              from 100,000 Possiblities, each NFT has it's own unique
-              charateristics and traits. Even the common ones have such surreal
-              traits that it goes beyond the expectations of the HODLers!
-            </p>
+            <ParaAbout />
             <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 lg:-mx-3 select-none lg:gap-10 md:gap-8 xs:gap-5 lg:p-20 md:p-10 xs:p-5 mt-8'>
               <div className='bg-slate-200 rounded-lg overflow-hidden'>
                 <img

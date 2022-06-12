@@ -2,33 +2,33 @@ import { Box } from "@mui/material";
 import React from "react";
 import TeamCard from "../Components/TeamCard";
 import teamAbhay from "../assets/compress/team-abhay.jpeg";
-import teamFarhan from "../assets/compress/team-farhan.png";
+import teamFarhan from "../assets/compress/team-farhan.jpeg";
 import teamShoaib from "../assets/compress/team-shoaib.jpeg";
 import teamNaman from "../assets/compress/team-naman.jpeg";
 
 const data = [
   {
-    name: "Farhan",
+    name: "Farhan Khan",
     work: "Founder & CEO",
     image: teamFarhan,
     insta: "https://www.instagram.com/ripfarhan/",
     twitter: "https://twitter.com/ripfarhann",
   },
   {
-    name: "Shoaib",
-    work: "Web Developer",
+    name: "Shoaib Shaikh",
+    work: "Developer",
     image: teamShoaib,
     linkedIn: "https://www.linkedin.com/in/shoaib-shaikh-658a62232/",
   },
   {
-    name: "Abhay",
-    work: "Blockchain Developer",
+    name: "Abhayrajsinh Gohil",
+    work: "Developer",
     image: teamAbhay,
     insta: "https://www.instagram.com/mxxnwolf/",
     twitter: "https://twitter.com/mxxnwolf",
   },
   {
-    name: "Namaan",
+    name: "Namaan Bread",
     work: "Lead Marketer",
     image: teamNaman,
     insta: "https://www.instagram.com/namaanbread/",
