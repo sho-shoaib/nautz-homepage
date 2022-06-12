@@ -29,10 +29,10 @@ const TitleAbout = () => {
       animate={animation}
       initial={{ opacity: 0, x: -100 }}
     >
-      <span className='text-indigo-500'>5000</span> NAUTZ generated from
+      <span className='text-indigo-500'>5000</span> NAUTZ Generated From
       <br />
       <span className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-4xl'>
-        <span className='text-indigo-500'>200,000</span> posibilities
+        <span className='text-indigo-500'>200,000</span> Posibilities
       </span>
     </motion.h1>
   );
