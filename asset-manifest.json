@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.css": "/nautz-homepage/static/css/main.21f497e3.css",
-    "main.js": "/nautz-homepage/static/js/main.96bd72e1.js",
+    "main.css": "/nautz-homepage/static/css/main.d0ff16c0.css",
+    "main.js": "/nautz-homepage/static/js/main.9bc05c5f.js",
     "static/media/Bg-AstrovidCom.mp4": "/nautz-homepage/static/media/Bg-AstrovidCom.01f43c734a09584b8ccd.mp4",
+    "static/media/naut11.png": "/nautz-homepage/static/media/naut11.a22124baa8efebba4f80.png",
     "static/media/naut-1_1.png": "/nautz-homepage/static/media/naut-1_1.03d58e6b73b63b0e0d87.png",
-    "static/media/naut-5_1.png": "/nautz-homepage/static/media/naut-5_1.6dd39eaca8f586da3132.png",
     "static/media/naut-3_1.png": "/nautz-homepage/static/media/naut-3_1.40d417194a00faf3770c.png",
+    "static/media/naut13.png": "/nautz-homepage/static/media/naut13.ace0acfab9774c08fb15.png",
+    "static/media/naut14.png": "/nautz-homepage/static/media/naut14.57674528a2fc835029f9.png",
     "static/media/naut-2_1.png": "/nautz-homepage/static/media/naut-2_1.c28854b7ea4561c57b5d.png",
-    "static/media/naut-4_1.png": "/nautz-homepage/static/media/naut-4_1.a8e739da27a7b499d019.png",
-    "static/media/naut-7NoBg_1.png": "/nautz-homepage/static/media/naut-7NoBg_1.b877cf98bc0d4ce412d9.png",
+    "static/media/team-farhan.png": "/nautz-homepage/static/media/team-farhan.a791f39b4e93a6bb0889.png",
+    "static/media/naut12.png": "/nautz-homepage/static/media/naut12.fdcbf0d510beeb7ac9e6.png",
+    "static/media/naut9NoBg.png": "/nautz-homepage/static/media/naut9NoBg.1a5ec59b965433f6251c.png",
     "static/media/bg-AstroImg_1.png": "/nautz-homepage/static/media/bg-AstroImg_1.4fcb7839e522f8c29459.png",
     "static/media/naut-6NoBg_1.png": "/nautz-homepage/static/media/naut-6NoBg_1.e1c53a650280865d938c.png",
+    "static/media/naut8NoBg.png": "/nautz-homepage/static/media/naut8NoBg.16eb1516cca36fb1d7ac.png",
+    "static/media/naut10NoBg.png": "/nautz-homepage/static/media/naut10NoBg.59839f3895998586978c.png",
     "static/media/bg-spaceImg_1.jpg": "/nautz-homepage/static/media/bg-spaceImg_1.7beda5b11311e694e1f4.jpg",
-    "static/media/team-farhan.JPEG": "/nautz-homepage/static/media/team-farhan.f5608f06422b44638381.JPEG",
+    "static/media/team-abhay.jpeg": "/nautz-homepage/static/media/team-abhay.23c8f95c6587dab5afb7.jpeg",
     "static/media/team-shoaib.jpeg": "/nautz-homepage/static/media/team-shoaib.1be900be05c99193dd35.jpeg",
-    "static/media/team-abhay.jpg": "/nautz-homepage/static/media/team-abhay.c5e3c3ed0957109ca0cd.jpg",
+    "static/media/team-naman.jpeg": "/nautz-homepage/static/media/team-naman.1b03a3a406355d59d4b4.jpeg",
+    "static/media/discordIcon.png": "/nautz-homepage/static/media/discordIcon.cd679e255e3338e684f8.png",
     "index.html": "/nautz-homepage/index.html",
-    "main.21f497e3.css.map": "/nautz-homepage/static/css/main.21f497e3.css.map",
-    "main.96bd72e1.js.map": "/nautz-homepage/static/js/main.96bd72e1.js.map"
+    "main.d0ff16c0.css.map": "/nautz-homepage/static/css/main.d0ff16c0.css.map",
+    "main.9bc05c5f.js.map": "/nautz-homepage/static/js/main.9bc05c5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.21f497e3.css",
-    "static/js/main.96bd72e1.js"
+    "static/css/main.d0ff16c0.css",
+    "static/js/main.9bc05c5f.js"
   ]
 }
