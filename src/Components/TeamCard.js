@@ -14,16 +14,16 @@ const TeamCard = ({ name, image, work, insta, twitter, linkedIn }) => {
         </div>
         <div className='child:cursor-pointer'>
           {linkedIn ? (
-            <a href={linkedIn} target='_blank'>
+            <a href={linkedIn} target='_blank' rel='noreferrer'>
               <LinkedInIcon />
             </a>
           ) : (
             <>
-              <a href={twitter} target='_blank'>
+              <a href={twitter} target='_blank' rel='noreferrer'>
                 <TwitterIcon className='mr-2' />
               </a>
 
-              <a href={insta} target='_blank'>
+              <a href={insta} target='_blank' rel='noreferrer'>
                 <InstagramIcon />
               </a>
             </>

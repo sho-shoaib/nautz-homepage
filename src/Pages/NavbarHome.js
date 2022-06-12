@@ -59,15 +59,27 @@ const NavbarHome = () => {
               </Link>
             </Box>
             <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
-              <a href='https://twitter.com/nautz_' target='_blank'>
+              <a
+                href='https://twitter.com/nautz_'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <TwitterIcon sx={{ fontSize: 30 }} />
               </a>
 
-              <a href='https://www.instagram.com/nautzz/' target='_blank'>
+              <a
+                href='https://www.instagram.com/nautzz/'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <InstagramIcon sx={{ fontSize: 30 }} />
               </a>
 
-              <a href='https://discord.gg/CGByNHYQcd' target='_blank'>
+              <a
+                href='https://discord.gg/CGByNHYQcd'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <img src={DiscordIcon} alt='discordIcon' className='w-8' />
               </a>
             </div>
@@ -80,17 +92,33 @@ const NavbarHome = () => {
             className='flex items-center justify-between py-4 z-50'
             sx={{ backgroundColor: "#2F339B" }}
           >
-            <p className='font-bold text-xl'>LOGO</p>
+            <Link activeClass='active' to='home' spy={true} smooth={true}>
+              <p className='font-bold text-2xl text-glow cursor-pointer'>
+                NAUTZ
+              </p>
+            </Link>
             <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
-              <a href='https://twitter.com/nautz_' target='_blank'>
+              <a
+                href='https://twitter.com/nautz_'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <TwitterIcon sx={{ fontSize: 30 }} />
               </a>
 
-              <a href='https://www.instagram.com/nautzz/' target='_blank'>
+              <a
+                href='https://www.instagram.com/nautzz/'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <InstagramIcon sx={{ fontSize: 30 }} />
               </a>
 
-              <a href='https://discord.gg/CGByNHYQcd' target='_blank'>
+              <a
+                href='https://discord.gg/CGByNHYQcd'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <img src={DiscordIcon} alt='discordIcon' className='w-8' />
               </a>
             </div>
@@ -132,17 +160,33 @@ const NavbarHome = () => {
               className='flex items-center justify-between py-4 z-40'
               sx={{ backgroundColor: "#2F339B" }}
             >
-              <p className='font-bold text-xl'>LOGO</p>
+              <Link activeClass='active' to='home' spy={true} smooth={true}>
+                <p className='font-bold text-2xl text-glow cursor-pointer'>
+                  NAUTZ
+                </p>
+              </Link>
               <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
-                <a href='https://twitter.com/nautz_' target='_blank'>
+                <a
+                  href='https://twitter.com/nautz_'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <TwitterIcon sx={{ fontSize: 30 }} />
                 </a>
 
-                <a href='https://www.instagram.com/nautzz/' target='_blank'>
+                <a
+                  href='https://www.instagram.com/nautzz/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <InstagramIcon sx={{ fontSize: 30 }} />
                 </a>
 
-                <a href='https://discord.gg/CGByNHYQcd' target='_blank'>
+                <a
+                  href='https://discord.gg/CGByNHYQcd'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <img src={DiscordIcon} alt='discordIcon' className='w-8' />
                 </a>
                 {isOpen ? (

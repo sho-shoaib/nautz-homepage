@@ -179,9 +179,13 @@ const Roadmap = () => {
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 25%
               </p>
-              Giveaway of 1 iPad Pro to one lucky NFT Holder. $5000 donation to
-              animal welfare First Nautz Event/Meetup in Mumbai, free access to
-              everyone.
+              <ul className='list-disc pl-3'>
+                <li>Giveaway of 1 iPad Pro to one lucky NFT Holder.</li>
+                <li>$5000 donation to animal welfare.</li>
+                <li>
+                  First Nautz Event/Meetup in Mumbai, free access to everyone.
+                </li>
+              </ul>
             </div>
             <div className='flex flex-col items-center gap-2'>
               <div className='h-14 w-2 bg-white rounded-lg'></div>
@@ -192,9 +196,15 @@ const Roadmap = () => {
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 50%
               </p>
-              We launch our private crypto trading group and add all our
-              holders! Our top 25 holders will be airdropped a Legendary Dragon
-              for free, owning that would make you an elite member of our club!
+              <ul className='list-disc pl-3'>
+                <li>3 ETH Giveaway among 3 lucky winners.</li>
+                <li>
+                  Start an exclusive club among the holders which will have
+                  special benifits.
+                </li>
+                <li>500 users will get Video Display LED necklaces.</li>
+                <li>Start NAUTZ DAO.</li>
+              </ul>
             </div>
             <div className='flex flex-col items-center gap-2'>
               <div className='h-14 w-2 bg-white rounded-lg'></div>
@@ -205,8 +215,15 @@ const Roadmap = () => {
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 75%
               </p>
-              We give away $500 to 10 of our lucky holders and giveaway 5 NFTs
-              to our most supportive Dragon community members🐉🐉
+              <ul className='list-disc pl-3'>
+                <li>Start Nautz Production House.</li>
+                <li>
+                  Sponsor high-end systems to artists who are in for Nautz
+                  Production House.
+                </li>
+                <li>Start building our own marketplace only for NAUTZ.</li>
+                <li>Start working on NAUTZ play-to-earn game.</li>
+              </ul>
             </div>
             <div className='flex flex-col items-center gap-2'>
               <div className='h-14 w-2 bg-white rounded-lg'></div>
@@ -217,10 +234,15 @@ const Roadmap = () => {
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 100%
               </p>
-              Once we have been successfully sold out, we will do an AMA
-              celebrating our success with our investors and Dragon holders🐉 We
-              will be reserving Legendary Dragons for auction, collabs and
-              marketing purposes.
+              <ul className='list-disc pl-3'>
+                <li>Send all the 5000 minted NFTs to literal space.</li>
+                <li>Launch our own marketplace.</li>
+                <li>Launch Nautz P2E game.</li>
+                <li>
+                  Setup base office for Nautz Production House and start
+                  employing.
+                </li>
+              </ul>
             </div>
           </div>
         )}
