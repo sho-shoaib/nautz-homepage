@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nautz-homepage/static/css/main.895281f4.css",
-    "main.js": "/nautz-homepage/static/js/main.e37066e8.js",
+    "main.js": "/nautz-homepage/static/js/main.37637329.js",
     "static/media/Bg-AstrovidCom.mp4": "/nautz-homepage/static/media/Bg-AstrovidCom.01f43c734a09584b8ccd.mp4",
     "static/media/naut11.png": "/nautz-homepage/static/media/naut11.a22124baa8efebba4f80.png",
     "static/media/naut-1_1.png": "/nautz-homepage/static/media/naut-1_1.03d58e6b73b63b0e0d87.png",
@@ -23,10 +23,10 @@
     "static/media/discordIcon.png": "/nautz-homepage/static/media/discordIcon.cd679e255e3338e684f8.png",
     "index.html": "/nautz-homepage/index.html",
     "main.895281f4.css.map": "/nautz-homepage/static/css/main.895281f4.css.map",
-    "main.e37066e8.js.map": "/nautz-homepage/static/js/main.e37066e8.js.map"
+    "main.37637329.js.map": "/nautz-homepage/static/js/main.37637329.js.map"
   },
   "entrypoints": [
     "static/css/main.895281f4.css",
-    "static/js/main.e37066e8.js"
+    "static/js/main.37637329.js"
   ]
 }
