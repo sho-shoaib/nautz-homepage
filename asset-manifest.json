@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nautz-homepage/static/css/main.d0ff16c0.css",
-    "main.js": "/nautz-homepage/static/js/main.2446fc3f.js",
+    "main.css": "/nautz-homepage/static/css/main.895281f4.css",
+    "main.js": "/nautz-homepage/static/js/main.e37066e8.js",
     "static/media/Bg-AstrovidCom.mp4": "/nautz-homepage/static/media/Bg-AstrovidCom.01f43c734a09584b8ccd.mp4",
     "static/media/naut11.png": "/nautz-homepage/static/media/naut11.a22124baa8efebba4f80.png",
     "static/media/naut-1_1.png": "/nautz-homepage/static/media/naut-1_1.03d58e6b73b63b0e0d87.png",
@@ -9,7 +9,6 @@
     "static/media/naut13.png": "/nautz-homepage/static/media/naut13.ace0acfab9774c08fb15.png",
     "static/media/naut14.png": "/nautz-homepage/static/media/naut14.57674528a2fc835029f9.png",
     "static/media/naut-2_1.png": "/nautz-homepage/static/media/naut-2_1.c28854b7ea4561c57b5d.png",
-    "static/media/team-farhan.png": "/nautz-homepage/static/media/team-farhan.a791f39b4e93a6bb0889.png",
     "static/media/naut12.png": "/nautz-homepage/static/media/naut12.fdcbf0d510beeb7ac9e6.png",
     "static/media/naut9NoBg.png": "/nautz-homepage/static/media/naut9NoBg.1a5ec59b965433f6251c.png",
     "static/media/bg-AstroImg_1.png": "/nautz-homepage/static/media/bg-AstroImg_1.4fcb7839e522f8c29459.png",
@@ -18,15 +17,16 @@
     "static/media/naut10NoBg.png": "/nautz-homepage/static/media/naut10NoBg.59839f3895998586978c.png",
     "static/media/bg-spaceImg_1.jpg": "/nautz-homepage/static/media/bg-spaceImg_1.7beda5b11311e694e1f4.jpg",
     "static/media/team-abhay.jpeg": "/nautz-homepage/static/media/team-abhay.23c8f95c6587dab5afb7.jpeg",
+    "static/media/team-farhan.jpeg": "/nautz-homepage/static/media/team-farhan.14699673bbf5c31e9826.jpeg",
     "static/media/team-shoaib.jpeg": "/nautz-homepage/static/media/team-shoaib.1be900be05c99193dd35.jpeg",
     "static/media/team-naman.jpeg": "/nautz-homepage/static/media/team-naman.1b03a3a406355d59d4b4.jpeg",
     "static/media/discordIcon.png": "/nautz-homepage/static/media/discordIcon.cd679e255e3338e684f8.png",
     "index.html": "/nautz-homepage/index.html",
-    "main.d0ff16c0.css.map": "/nautz-homepage/static/css/main.d0ff16c0.css.map",
-    "main.2446fc3f.js.map": "/nautz-homepage/static/js/main.2446fc3f.js.map"
+    "main.895281f4.css.map": "/nautz-homepage/static/css/main.895281f4.css.map",
+    "main.e37066e8.js.map": "/nautz-homepage/static/js/main.e37066e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0ff16c0.css",
-    "static/js/main.2446fc3f.js"
+    "static/css/main.895281f4.css",
+    "static/js/main.e37066e8.js"
   ]
 }
