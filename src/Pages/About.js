@@ -2,21 +2,15 @@ import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import naut1com from "../assets/compress/naut-1_1.png";
 import useWindowDimensions from "../Components/getWindowDimensions";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
-import naut2com from "../assets/compress/naut-2_1.png";
-import naut3com from "../assets/compress/naut-3_1.png";
 import naut14 from "../assets/compress/naut14.png";
-import naut11 from "../assets/compress/naut11.png";
-import naut12 from "../assets/compress/naut12.png";
-import naut13 from "../assets/compress/naut13.png";
-import naut1 from "../assets/compress/naut-1_1.png";
 import TitleAbout from "../Components/TitleAbout";
 import ParaAbout from "../Components/ParaAbout";
+import GridAbout from "../Components/GridAbout";
 
 const About = () => {
   const { width } = useWindowDimensions();
@@ -90,55 +84,7 @@ const About = () => {
           <div className='w-full'>
             <TitleAbout />
             <ParaAbout />
-            <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 lg:-mx-3 select-none lg:gap-10 md:gap-8 xs:gap-5 lg:p-20 md:p-10 xs:p-5 mt-8'>
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut12}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut1}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut13}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut3com}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut11}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut2com}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-            </div>
+            <GridAbout />
           </div>
         </div>
       </Box>
