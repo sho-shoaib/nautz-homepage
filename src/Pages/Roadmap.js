@@ -27,7 +27,7 @@ const Roadmap = () => {
         scale: 1,
         transition: {
           duration: 1,
-          delay: 0.1,
+          delay: 0.2,
         },
       });
     }
@@ -129,7 +129,7 @@ const Roadmap = () => {
                       </p>
                     )}
                     <ul className='list-disc pl-3'>
-                      <li>Start Nautz Production House .</li>
+                      <li>Start Nautz Production House.</li>
                       <li>
                         Sponsor high-end systems to artists who are in for Nautz
                         Production House.

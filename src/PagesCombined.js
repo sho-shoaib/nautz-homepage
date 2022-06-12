@@ -7,6 +7,7 @@ import bgSpaceImgcom from "./assets/compress/bg-spaceImg_1.jpg";
 import Utility from "./Pages/Utility";
 import Faq from "./Pages/Faq";
 import Team from "./Pages/Team";
+import Speciality from "./Pages/Speciality";
 
 const PagesCombined = () => {
   return (
@@ -22,6 +23,7 @@ const PagesCombined = () => {
       />
       <About />
       <Roadmap />
+      <Speciality />
       <Team />
       <Utility />
       <Faq />

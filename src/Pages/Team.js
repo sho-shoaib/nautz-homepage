@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import React from "react";
 import TeamCard from "../Components/TeamCard";
-import teamAbhay from "../assets/compress/team-abhay.jpg";
-import teamFarhan from "../assets/compress/team-farhan.JPEG";
+import teamAbhay from "../assets/compress/team-abhay.jpeg";
+import teamFarhan from "../assets/compress/team-farhan.png";
 import teamShoaib from "../assets/compress/team-shoaib.jpeg";
-import teamNamanPlaceHolder from "../assets/compress/naut-4_1.png";
+import teamNaman from "../assets/compress/team-naman.jpeg";
 
 const data = [
   {
@@ -13,13 +13,6 @@ const data = [
     image: teamFarhan,
     insta: "https://www.instagram.com/ripfarhan/",
     twitter: "https://twitter.com/ripfarhann",
-  },
-  {
-    name: "Namaan",
-    work: "Lead Marketer",
-    image: teamNamanPlaceHolder,
-    insta: "https://www.instagram.com/namaanbread/",
-    twitter: "https://twitter.com/Namaan1234",
   },
   {
     name: "Shoaib",
@@ -33,6 +26,13 @@ const data = [
     image: teamAbhay,
     insta: "https://www.instagram.com/mxxnwolf/",
     twitter: "https://twitter.com/mxxnwolf",
+  },
+  {
+    name: "Namaan",
+    work: "Lead Marketer",
+    image: teamNaman,
+    insta: "https://www.instagram.com/namaanbread/",
+    twitter: "https://twitter.com/Namaan1234",
   },
 ];
 

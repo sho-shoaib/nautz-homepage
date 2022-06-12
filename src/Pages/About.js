@@ -10,8 +10,12 @@ import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import naut2com from "../assets/compress/naut-2_1.png";
 import naut3com from "../assets/compress/naut-3_1.png";
-import naut4com from "../assets/compress/naut-4_1.png";
-import naut5com from "../assets/compress/naut-5_1.png";
+import naut14 from "../assets/compress/naut14.png";
+import naut11 from "../assets/compress/naut11.png";
+import naut12 from "../assets/compress/naut12.png";
+import naut13 from "../assets/compress/naut13.png";
+import naut1 from "../assets/compress/naut-1_1.png";
+import TitleAbout from "../Components/TitleAbout";
 
 const About = () => {
   const { width } = useWindowDimensions();
@@ -26,7 +30,7 @@ const About = () => {
         scale: 1,
         transition: {
           duration: 0.5,
-          delay: 0.1,
+          delay: 0.2,
         },
       });
     }
@@ -76,23 +80,14 @@ const About = () => {
             className={`bg-slate-200 bg-center rounded-lg md:w-96 sm:w-9/12 xs:w-full xs:m-auto md:m-0`}
             style={{
               height: `400px`,
-              backgroundImage: `url(${naut1com})`,
+              backgroundImage: `url(${naut14})`,
               backgroundSize: "cover",
             }}
           ></div>
         </div>
         <div>
           <div className='w-full'>
-            <h1
-              className='lg:w-full xs:w-full xs:text-center md:text-left lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl font-bold mb-6 lg:leading-relaxed md:leading-normal
-      sm:leading-normal xs:leading-relaxed'
-            >
-              <span className='text-indigo-500'>5000</span> NAUTZ generated from
-              <br />
-              <span className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-4xl'>
-                <span className='text-indigo-500'>100,000</span> posibilities
-              </span>
-            </h1>
+            <TitleAbout />
             <p className='lg:text-2xl md:text-xl sm:text-lg xs:text-md font-semibold lg:w-7/12 leading-normal xs:text-center xs:w-9/12 xs:mx-auto md:text-left md:mx-0'>
               We created and curated 5000 Nautz that were selected and created
               from 100,000 Possiblities, each NFT has it's own unique
@@ -102,7 +97,23 @@ const About = () => {
             <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 lg:-mx-3 select-none lg:gap-10 md:gap-8 xs:gap-5 lg:p-20 md:p-10 xs:p-5 mt-8'>
               <div className='bg-slate-200 rounded-lg overflow-hidden'>
                 <img
-                  src={naut2com}
+                  src={naut12}
+                  alt='naut1'
+                  className='object-cover h-full w-full'
+                />
+              </div>
+
+              <div className='bg-slate-200 rounded-lg overflow-hidden'>
+                <img
+                  src={naut1}
+                  alt='naut1'
+                  className='object-cover h-full w-full'
+                />
+              </div>
+
+              <div className='bg-slate-200 rounded-lg overflow-hidden'>
+                <img
+                  src={naut13}
                   alt='naut1'
                   className='object-cover h-full w-full'
                 />
@@ -118,7 +129,7 @@ const About = () => {
 
               <div className='bg-slate-200 rounded-lg overflow-hidden'>
                 <img
-                  src={naut4com}
+                  src={naut11}
                   alt='naut1'
                   className='object-cover h-full w-full'
                 />
@@ -126,23 +137,7 @@ const About = () => {
 
               <div className='bg-slate-200 rounded-lg overflow-hidden'>
                 <img
-                  src={naut5com}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut1com}
-                  alt='naut1'
-                  className='object-cover h-full w-full'
-                />
-              </div>
-
-              <div className='bg-slate-200 rounded-lg overflow-hidden'>
-                <img
-                  src={naut1com}
+                  src={naut2com}
                   alt='naut1'
                   className='object-cover h-full w-full'
                 />

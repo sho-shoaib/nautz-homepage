@@ -40,7 +40,7 @@ const Faq = () => {
         scale: 1,
         transition: {
           duration: 1,
-          delay: 0.1,
+          delay: 0.2,
         },
       });
     }

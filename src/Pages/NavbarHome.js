@@ -7,6 +7,7 @@ import useWindowDimensions from "../Components/getWindowDimensions";
 import { Link } from "react-scroll";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+import DiscordIcon from "../assets/compress/discordIcon.png";
 
 const NavbarHome = () => {
   const { width } = useWindowDimensions();
@@ -23,7 +24,11 @@ const NavbarHome = () => {
           }}
         >
           <Container className='flex items-center justify-between py-4'>
-            <p className='font-bold text-xl'>LOGO</p>
+            <Link activeClass='active' to='home' spy={true} smooth={true}>
+              <p className='font-bold text-2xl text-glow cursor-pointer'>
+                NAUTZ
+              </p>
+            </Link>
             <Box className='flex gap-10 child:text-lg child:font-medium child:cursor-pointer child-hover:opacity-80 child:transition child:ease-in'>
               <Link activeClass='active' to='home' spy={true} smooth={true}>
                 <p className='text-xl'>Home</p>
@@ -50,12 +55,21 @@ const NavbarHome = () => {
               </Link>
 
               <Link activeClass='active' to='faq' spy={true} smooth={true}>
-                <p className='text-xl'>Faq</p>
+                <p className='text-xl'>FAQ</p>
               </Link>
             </Box>
             <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
-              <TwitterIcon sx={{ fontSize: 30 }} />
-              <InstagramIcon sx={{ fontSize: 30 }} />
+              <a href='https://twitter.com/nautz_' target='_blank'>
+                <TwitterIcon sx={{ fontSize: 30 }} />
+              </a>
+
+              <a href='https://www.instagram.com/nautzz/' target='_blank'>
+                <InstagramIcon sx={{ fontSize: 30 }} />
+              </a>
+
+              <a href='https://discord.gg/CGByNHYQcd' target='_blank'>
+                <img src={DiscordIcon} alt='discordIcon' className='w-8' />
+              </a>
             </div>
           </Container>
         </nav>
@@ -68,8 +82,17 @@ const NavbarHome = () => {
           >
             <p className='font-bold text-xl'>LOGO</p>
             <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
-              <TwitterIcon sx={{ fontSize: 30 }} />
-              <InstagramIcon sx={{ fontSize: 30 }} />
+              <a href='https://twitter.com/nautz_' target='_blank'>
+                <TwitterIcon sx={{ fontSize: 30 }} />
+              </a>
+
+              <a href='https://www.instagram.com/nautzz/' target='_blank'>
+                <InstagramIcon sx={{ fontSize: 30 }} />
+              </a>
+
+              <a href='https://discord.gg/CGByNHYQcd' target='_blank'>
+                <img src={DiscordIcon} alt='discordIcon' className='w-8' />
+              </a>
             </div>
           </Container>
           <Box
@@ -97,7 +120,7 @@ const NavbarHome = () => {
             </Link>
 
             <Link activeClass='active' to='faq' spy={true} smooth={true}>
-              <p className='text-xl'>Faq</p>
+              <p className='text-xl'>FAQ</p>
             </Link>
           </Box>
         </>
@@ -111,8 +134,17 @@ const NavbarHome = () => {
             >
               <p className='font-bold text-xl'>LOGO</p>
               <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
-                <TwitterIcon sx={{ fontSize: 30 }} />
-                <InstagramIcon sx={{ fontSize: 30 }} />
+                <a href='https://twitter.com/nautz_' target='_blank'>
+                  <TwitterIcon sx={{ fontSize: 30 }} />
+                </a>
+
+                <a href='https://www.instagram.com/nautzz/' target='_blank'>
+                  <InstagramIcon sx={{ fontSize: 30 }} />
+                </a>
+
+                <a href='https://discord.gg/CGByNHYQcd' target='_blank'>
+                  <img src={DiscordIcon} alt='discordIcon' className='w-8' />
+                </a>
                 {isOpen ? (
                   <CloseIcon sx={{ fontSize: 30 }} onClick={toggle} />
                 ) : (
@@ -171,7 +203,7 @@ const NavbarHome = () => {
 
                 <Link activeClass='active' to='faq' spy={true} smooth={true}>
                   <p className='text-lg' onClick={toggle}>
-                    Faq
+                    FAQ
                   </p>
                 </Link>
               </Box>

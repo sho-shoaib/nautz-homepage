@@ -1,7 +1,8 @@
 import { Box } from "@mui/material";
 import React from "react";
-import nautNoBg1com from "../assets/compress/naut-6NoBg_1.png";
-import nautNoBg2com from "../assets/compress/naut-7NoBg_1.png";
+import naut8NoBg from "../assets/compress/naut8NoBg.png";
+import naut9NoBg from "../assets/compress/naut9NoBg.png";
+import naut10NoBg from "../assets/compress/naut10NoBg.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -19,7 +20,7 @@ const Utility = () => {
         scale: 1,
         transition: {
           duration: 1,
-          delay: 0.1,
+          delay: 0.2,
         },
       });
     }
@@ -37,21 +38,21 @@ const Utility = () => {
         <div className='flex justify-center items-end mb-7'>
           <div className='image-container lg:w-60 md:w-60 sm:w-52 xs:w-40 lg:h-60 md:h-60 sm:h-52 xs:h-40 lg:-mr-28 md:-mr-28 xs:-mr-24 border-b-4'>
             <img
-              src={nautNoBg2com}
+              src={naut8NoBg}
               alt='nautNoBg'
               className='object-cover w-full h-full'
             />
           </div>
           <div className='image-container lg:w-96 md:w-96 sm:w-80 xs:w-60 lg:h-96 md:h-96 sm:h-80 xs:h-60 z-10 border-b-4'>
             <img
-              src={nautNoBg1com}
+              src={naut10NoBg}
               alt='nautNoBg'
               className='object-cover w-full h-full'
             />
           </div>
           <div className='image-container lg:w-60 md:w-60 sm:w-52 xs:w-40 lg:h-60 md:h-60 sm:h-52 xs:h-40 lg:-ml-28 md:-ml-28 xs:-ml-24 border-b-4'>
             <img
-              src={nautNoBg2com}
+              src={naut9NoBg}
               alt='nautNoBg'
               className='object-cover w-full h-full'
             />
