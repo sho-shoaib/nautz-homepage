@@ -74,7 +74,7 @@ const Faq = () => {
               <p className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
                 Get on the Nautz whitelist and mint it during the presale at a
                 discounted price or mint during the public sale which will be
-                open for all. You can mint NAUTZ on our website, the detials
+                open for all. You can mint NAUTZ on our website, the details
                 will be provided soon. Also users can buy and sell NAUTZ on{" "}
                 <a
                   href='https://opensea.io/collection/nautz'

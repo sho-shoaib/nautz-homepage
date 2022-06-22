@@ -29,7 +29,7 @@ const ParaAbout = () => {
       initial={{ opacity: 0, x: -50 }}
     >
       We created and curated 5000 Nautz that were selected and created from
-      100,000 Possiblities, each NFT has it's own unique charateristics and
+      20,000,000 Possiblities, each NFT has it's own unique charateristics and
       traits. Even the common ones have such surreal traits that it goes beyond
       the expectations of the HODLers!
     </motion.p>

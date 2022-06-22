@@ -1,10 +1,10 @@
 import React from "react";
 import naut11 from "../assets/compress/naut11.png";
 import naut12 from "../assets/compress/naut12.png";
-import naut13 from "../assets/compress/naut13.png";
 import naut1 from "../assets/compress/naut-1_1.png";
 import naut2com from "../assets/compress/naut-2_1.png";
 import naut3com from "../assets/compress/naut-3_1.png";
+import naut15 from "../assets/compress/naut15.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -44,7 +44,7 @@ const GridAbout = () => {
       </div>
 
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img src={naut13} alt='naut1' className='object-cover h-full w-full' />
+        <img src={naut15} alt='naut1' className='object-cover h-full w-full' />
       </div>
 
       <div className='bg-slate-200 rounded-lg overflow-hidden'>

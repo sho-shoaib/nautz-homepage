@@ -19,20 +19,20 @@ const data = [
     twitter: "https://twitter.com/ripfarhann",
   },
   {
+    name: "Abhayrajsinh Gohil",
+    work: "CTO",
+    image: teamAbhay,
+    insta: "https://www.instagram.com/mxxnwolf/",
+    twitter: "https://twitter.com/mxxnwolf",
+  },
+  {
     name: "Shoaib Shaikh",
     work: "Developer",
     image: teamShoaib,
     linkedIn: "https://www.linkedin.com/in/shoaib-shaikh-658a62232/",
   },
   {
-    name: "Abhayrajsinh Gohil",
-    work: "Developer",
-    image: teamAbhay,
-    insta: "https://www.instagram.com/mxxnwolf/",
-    twitter: "https://twitter.com/mxxnwolf",
-  },
-  {
-    name: "Namaan Bread",
+    name: "Namaan Waheed",
     work: "Lead Marketer",
     image: teamNaman,
     insta: "https://www.instagram.com/namaanbread/",

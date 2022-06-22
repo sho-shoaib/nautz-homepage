@@ -73,7 +73,10 @@ const Roadmap = () => {
                     )}
                     <ul className='list-disc pl-3'>
                       <li>Giveaway of 1 iPad Pro to one lucky NFT Holder.</li>
-                      <li>$5000 donation to animal welfare.</li>
+                      <li>
+                        Donating $5000 worth Art Supplies and systems to needy
+                        artists.
+                      </li>
                       <li>
                         First Nautz Event/Meetup in Mumbai, free access to
                         everyone.
@@ -181,7 +184,10 @@ const Roadmap = () => {
               </p>
               <ul className='list-disc pl-3'>
                 <li>Giveaway of 1 iPad Pro to one lucky NFT Holder.</li>
-                <li>$5000 donation to animal welfare.</li>
+                <li>
+                  Donating $5000 worth Art Supplies and systems to needy
+                  artists.
+                </li>
                 <li>
                   First Nautz Event/Meetup in Mumbai, free access to everyone.
                 </li>

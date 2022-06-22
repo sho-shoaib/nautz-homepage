@@ -75,7 +75,7 @@ const Home = () => {
         >
           NAUTZ
         </motion.h1>
-        <motion.p
+        <motion.h1
           className='text-2xl lg:text-2xl md:text-2xl sm:text-2xl xs:text-lg font-base sm:max-w-lg text-center px-5 xs:max-w-xs'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -83,7 +83,7 @@ const Home = () => {
         >
           5000 Super Cool <span className='font-semibold'>AstroNAUTZ</span>{" "}
           About To Take Off Soon
-        </motion.p>
+        </motion.h1>
       </div>
       {/* <div
         className='bg-black h-14 w-full absolute bottom-0 right-0 left-0'

@@ -31,8 +31,8 @@ const TitleAbout = () => {
     >
       <span className='text-indigo-500'>5000</span> NAUTZ Generated From
       <br />
-      <span className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-4xl'>
-        <span className='text-indigo-500'>200,000</span> Posibilities
+      <span className='lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl'>
+        <span className='text-indigo-500'>20,000,000</span> Possibilities
       </span>
     </motion.h1>
   );
