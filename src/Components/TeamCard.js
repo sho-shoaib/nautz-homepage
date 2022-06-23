@@ -10,7 +10,7 @@ const TeamCard = ({ name, image, work, insta, twitter, linkedIn, object }) => {
         <img
           src={image}
           alt={name}
-          className={`object-cover h-full w-full object-${object} hover:scale-105 transition ease-in-out duration-300`}
+          className={`object-cover h-full w-full object-${object} hover:scale-110 transition ease-in-out duration-300`}
         />
       </div>
 
