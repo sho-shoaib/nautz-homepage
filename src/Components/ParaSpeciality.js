@@ -23,7 +23,7 @@ const ParaSpeciality = () => {
 
   return (
     <motion.p
-      className='text-lg'
+      className='md:text-lg sm:text-lg xs:text-md text-justify'
       ref={ref}
       animate={animation}
       initial={{ opacity: 0, y: 50 }}

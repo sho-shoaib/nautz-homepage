@@ -28,7 +28,9 @@ const TitleSpeciality = () => {
       animate={animation}
       initial={{ opacity: 0, x: 80 }}
     >
-      What makes your NFT soo special?
+      What makes your NFT
+      <br />
+      soo special?
     </motion.p>
   );
 };

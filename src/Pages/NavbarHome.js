@@ -8,6 +8,7 @@ import { Link } from "react-scroll";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import DiscordIcon from "../assets/compress/discordIcon.png";
+import logo from "../assets/compress/logo.png";
 
 const NavbarHome = () => {
   const { width } = useWindowDimensions();
@@ -16,33 +17,33 @@ const NavbarHome = () => {
 
   return (
     <>
-      {width > 850 && (
+      {width > 930 && (
         <nav
           className={`z-50 w-full ${width > 800 && "sticky top-0"}`}
           style={{
-            backgroundColor: "#2F339B",
+            backgroundColor: "rgb(19 23 114)",
           }}
         >
           <Container className='flex items-center justify-between py-4'>
             <Link activeClass='active' to='home' spy={true} smooth={true}>
-              <p className='font-bold text-2xl text-glow cursor-pointer'>
-                NAUTZ
-              </p>
+              <div className='w-32 cursor-pointer'>
+                <img src={logo} alt='logo' className='h-full w-full' />
+              </div>
             </Link>
-            <Box className='flex gap-10 child:text-lg child:font-medium child:cursor-pointer child-hover:opacity-80 child:transition child:ease-in'>
+            <Box className='flex gap-10 child:text-md child:font-medium child:cursor-pointer child-hover:opacity-80 child:transition child:ease-in'>
               <Link activeClass='active' to='home' spy={true} smooth={true}>
-                <p className='text-xl'>Home</p>
+                <p>Home</p>
               </Link>
               <Link activeClass='active' to='about' spy={true} smooth={true}>
-                <p className='text-xl'>About</p>
+                <p>About</p>
               </Link>
 
               <Link activeClass='active' to='roadmap' spy={true} smooth={true}>
-                <p className='text-xl'>Roadmap</p>
+                <p>Roadmap</p>
               </Link>
 
               <Link activeClass='active' to='team' spy={true} smooth={true}>
-                <p className='text-xl'>Team</p>
+                <p>Team</p>
               </Link>
 
               <Link
@@ -51,51 +52,53 @@ const NavbarHome = () => {
                 spy={true}
                 smooth={true}
               >
-                <p className='text-xl'>Utilities</p>
+                <p>Utilities</p>
               </Link>
 
               <Link activeClass='active' to='faq' spy={true} smooth={true}>
-                <p className='text-xl'>FAQ</p>
+                <p>FAQ</p>
               </Link>
             </Box>
             <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
-              <a
-                href='https://twitter.com/nautz_'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <TwitterIcon sx={{ fontSize: 30 }} />
-              </a>
-
               <a
                 href='https://www.instagram.com/nautzz/'
                 target='_blank'
                 rel='noreferrer'
               >
-                <InstagramIcon sx={{ fontSize: 30 }} />
+                <InstagramIcon sx={{ fontSize: 20 }} />
+              </a>
+              <a
+                href='https://twitter.com/nautz_'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <TwitterIcon sx={{ fontSize: 20 }} />
               </a>
 
               <a
                 href='https://discord.gg/CGByNHYQcd'
                 target='_blank'
                 rel='noreferrer'
+                style={{ marginTop: "4px" }}
               >
-                <img src={DiscordIcon} alt='discordIcon' className='w-8' />
+                <img src={DiscordIcon} alt='discordIcon' className='w-5' />
               </a>
             </div>
           </Container>
         </nav>
       )}{" "}
-      {width <= 850 && width > 550 && (
+      {width <= 930 && width > 550 && (
         <>
           <Container
             className='flex items-center justify-between py-4 z-50'
-            sx={{ backgroundColor: "#2F339B" }}
+            style={{
+              backgroundColor: "rgb(19 23 114)",
+            }}
           >
             <Link activeClass='active' to='home' spy={true} smooth={true}>
-              <p className='font-bold text-2xl text-glow cursor-pointer'>
-                NAUTZ
-              </p>
+              <div className='w-32 cursor-pointer'>
+                <img src={logo} alt='logo' className='h-full w-full' />
+              </div>
             </Link>
             <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
               <a
@@ -124,31 +127,31 @@ const NavbarHome = () => {
             </div>
           </Container>
           <Box
-            className='w-full border-t-2 border-indigo-700 p-2 child:text-lg child:font-medium child:cursor-pointer child-hover:opacity-80 child:transition child:ease-in flex gap-5 justify-center py-5 sticky top-0 z-50'
-            sx={{
-              backgroundColor: "#2F339B",
+            className='w-full border-t-2 border-indigo-900 p-2 child:text-md child:font-medium child:cursor-pointer child-hover:opacity-80 child:transition child:ease-in flex gap-5 justify-center py-5 sticky top-0 z-50 child:text-lg child:font-medium'
+            style={{
+              backgroundColor: "rgb(19 23 114)",
             }}
           >
             <Link activeClass='active' to='home' spy={true} smooth={true}>
-              <p className='text-xl'>Home</p>
+              <p>Home</p>
             </Link>
             <Link activeClass='active' to='about' spy={true} smooth={true}>
-              <p className='text-xl'>About</p>
+              <p>About</p>
             </Link>
             <Link activeClass='active' to='roadmap' spy={true} smooth={true}>
-              <p className='text-xl'>Roadmap</p>
+              <p>Roadmap</p>
             </Link>
 
             <Link activeClass='active' to='team' spy={true} smooth={true}>
-              <p className='text-xl'>Team</p>
+              <p>Team</p>
             </Link>
 
             <Link activeClass='active' to='utilities' spy={true} smooth={true}>
-              <p className='text-xl'>Utilities</p>
+              <p>Utilities</p>
             </Link>
 
             <Link activeClass='active' to='faq' spy={true} smooth={true}>
-              <p className='text-xl'>FAQ</p>
+              <p>FAQ</p>
             </Link>
           </Box>
         </>
@@ -158,12 +161,14 @@ const NavbarHome = () => {
           <div className='z-50 w-full sticky top-0 relative'>
             <Container
               className='flex items-center justify-between py-4 z-40'
-              sx={{ backgroundColor: "#2F339B" }}
+              style={{
+                backgroundColor: "rgb(19 23 114)",
+              }}
             >
               <Link activeClass='active' to='home' spy={true} smooth={true}>
-                <p className='font-bold text-2xl text-glow cursor-pointer'>
-                  NAUTZ
-                </p>
+                <div className='w-32 cursor-pointer'>
+                  <img src={logo} alt='logo' className='h-full w-full' />
+                </div>
               </Link>
               <div className='flex gap-6 child-hover:opacity-80 child:transition child:ease-in child:cursor-pointer'>
                 <a

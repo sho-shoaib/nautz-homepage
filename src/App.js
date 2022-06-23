@@ -1,4 +1,3 @@
-import Home from "./Pages/Home";
 import PagesCombined from "./PagesCombined";
 
 function App() {

@@ -65,7 +65,7 @@ const Roadmap = () => {
                   <TimelineConnector className='bg-white' />
                 </TimelineSeparator>
                 <TimelineContent className='mb-16'>
-                  <div className='glass p-5 rounded-lg'>
+                  <div className='glass p-5 rounded-lg border-8 border-black'>
                     {width < 780 && (
                       <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                         25%
@@ -96,7 +96,7 @@ const Roadmap = () => {
                   <TimelineConnector className='bg-white' />
                 </TimelineSeparator>
                 <TimelineContent className='flex justify-end mb-16'>
-                  <div className='glass p-5 rounded-lg'>
+                  <div className='glass p-5 rounded-lg rounded-lg border-8 border-black'>
                     {width < 780 && (
                       <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                         50%
@@ -125,7 +125,7 @@ const Roadmap = () => {
                   <TimelineConnector className='bg-white' />
                 </TimelineSeparator>
                 <TimelineContent className='mb-16'>
-                  <div className='glass p-5 rounded-lg'>
+                  <div className='glass p-5 rounded-lg rounded-lg border-8 border-black'>
                     {width < 780 && (
                       <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                         75%
@@ -155,8 +155,8 @@ const Roadmap = () => {
                   <TimelineDot className='bg-white' />
                   <TimelineConnector className='bg-white' />
                 </TimelineSeparator>
-                <TimelineContent className='flex justify-end'>
-                  <div className='glass p-5 rounded-lg'>
+                <TimelineContent className='flex justify-end '>
+                  <div className='glass p-5 rounded-lg border-8 border-black'>
                     {width < 780 && (
                       <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                         100%
@@ -178,7 +178,7 @@ const Roadmap = () => {
           </div>
         ) : (
           <div className='flex flex-col items-center gap-2'>
-            <div className='glass p-5 rounded-lg xs:w-full sm:w-96'>
+            <div className='glass p-5 rounded-lg border-8 border-black xs:w-full sm:w-96'>
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 25%
               </p>
@@ -198,7 +198,7 @@ const Roadmap = () => {
               <CircleIcon sx={{ fontSize: 15 }} />
             </div>
 
-            <div className='glass p-5 rounded-lg xs:w-full sm:w-96'>
+            <div className='glass p-5 rounded- border-8 border-black xs:w-full sm:w-96'>
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 50%
               </p>
@@ -217,7 +217,7 @@ const Roadmap = () => {
               <CircleIcon sx={{ fontSize: 15 }} />
             </div>
 
-            <div className='glass p-5 rounded-lg xs:w-full sm:w-96'>
+            <div className='glass p-5 rounded-lg border-8 border-black xs:w-full sm:w-96'>
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 75%
               </p>
@@ -236,7 +236,7 @@ const Roadmap = () => {
               <CircleIcon sx={{ fontSize: 15 }} />
             </div>
 
-            <div className='glass p-5 rounded-lg xs:w-full sm:w-96'>
+            <div className='glass p-5 rounded-lg border-8 border-black xs:w-full sm:w-96'>
               <p className='lg:text-6xl md:text-6xl xs:text-5xl font-semibold text-glow lg:mb-0 xs:mb-5'>
                 100%
               </p>

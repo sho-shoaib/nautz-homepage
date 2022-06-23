@@ -5,6 +5,8 @@ import teamAbhay from "../assets/compress/team-abhay.jpeg";
 import teamFarhan from "../assets/compress/team-farhan.jpeg";
 import teamShoaib from "../assets/compress/team-shoaib.jpeg";
 import teamNaman from "../assets/compress/team-naman.jpeg";
+import teamPariksit from "../assets/compress/team-pariksit.jpeg";
+import teamMehul from "../assets/compress/team-mehul.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -13,10 +15,26 @@ import { useAnimation } from "framer-motion";
 const data = [
   {
     name: "Farhan Khan",
-    work: "Founder & CEO",
+    work: "Founder",
     image: teamFarhan,
     insta: "https://www.instagram.com/ripfarhan/",
     twitter: "https://twitter.com/ripfarhann",
+    object: "top",
+  },
+  {
+    name: "Parikshit Pndya",
+    work: "Co-Founder",
+    image: teamPariksit,
+    insta: "https://www.instagram.com/parikshitpndya/",
+    object: "top",
+  },
+  {
+    name: "Mehul Mstry",
+    work: "BDM",
+    image: teamMehul,
+    insta: "https://www.instagram.com/mehulmstry/",
+    twitter: "https://twitter.com/impingegrafix",
+    object: "top",
   },
   {
     name: "Abhayrajsinh Gohil",
@@ -24,12 +42,14 @@ const data = [
     image: teamAbhay,
     insta: "https://www.instagram.com/mxxnwolf/",
     twitter: "https://twitter.com/mxxnwolf",
+    object: "top",
   },
   {
     name: "Shoaib Shaikh",
     work: "Developer",
     image: teamShoaib,
     linkedIn: "https://www.linkedin.com/in/shoaib-shaikh-658a62232/",
+    object: "center",
   },
   {
     name: "Namaan Waheed",
@@ -37,6 +57,7 @@ const data = [
     image: teamNaman,
     insta: "https://www.instagram.com/namaanbread/",
     twitter: "https://twitter.com/Namaan1234",
+    object: "top",
   },
 ];
 
@@ -69,10 +90,10 @@ const Team = () => {
       animate={animation}
     >
       <p className='lg:text-6xl sm:text-5xl xs:text-4xl font-bold mb-16 text-center text-glow'>
-        MEET THE TEAM
+        MEET THE NAUTZ
       </p>
-      <div className='w-full grid sm:grid-cols-2 xs:grid-cols-1 justify-center items-center gap-y-16'>
-        {data.map(({ name, work, image, insta, twitter, linkedIn }) => {
+      <div className='w-full grid sm:grid-cols-2 md:grid-cols-3 xs:grid-cols-1 justify-center items-center gap-y-16'>
+        {data.map(({ name, work, image, insta, twitter, linkedIn, object }) => {
           return (
             <TeamCard
               name={name}
@@ -81,6 +102,7 @@ const Team = () => {
               insta={insta}
               twitter={twitter}
               linkedIn={linkedIn}
+              object={object}
             />
           );
         })}

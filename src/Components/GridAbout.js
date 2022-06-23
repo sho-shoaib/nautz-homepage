@@ -36,34 +36,50 @@ const GridAbout = () => {
       animate={animation}
     >
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img src={naut12} alt='naut1' className='object-cover h-full w-full' />
+        <img
+          src={naut12}
+          alt='naut1'
+          className='object-cover h-full w-full hover:scale-105 transition ease-in-out duration-300'
+        />
       </div>
 
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img src={naut1} alt='naut1' className='object-cover h-full w-full' />
+        <img
+          src={naut1}
+          alt='naut1'
+          className='object-cover h-full w-full hover:scale-105 transition ease-in-out duration-300'
+        />
       </div>
 
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img src={naut15} alt='naut1' className='object-cover h-full w-full' />
+        <img
+          src={naut15}
+          alt='naut1'
+          className='object-cover h-full w-full hover:scale-105 transition ease-in-out duration-300'
+        />
       </div>
 
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
         <img
           src={naut3com}
           alt='naut1'
-          className='object-cover h-full w-full'
+          className='object-cover h-full w-full hover:scale-105 transition ease-in-out duration-300'
         />
       </div>
 
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img src={naut11} alt='naut1' className='object-cover h-full w-full' />
+        <img
+          src={naut11}
+          alt='naut1'
+          className='object-cover h-full w-full hover:scale-105 transition ease-in-out duration-300'
+        />
       </div>
 
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
         <img
           src={naut2com}
           alt='naut1'
-          className='object-cover h-full w-full'
+          className='object-cover h-full w-full hover:scale-105 transition ease-in-out duration-300'
         />
       </div>
     </motion.div>

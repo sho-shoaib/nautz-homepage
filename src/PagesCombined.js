@@ -8,6 +8,7 @@ import Utility from "./Pages/Utility";
 import Faq from "./Pages/Faq";
 import Team from "./Pages/Team";
 import Speciality from "./Pages/Speciality";
+import Footer from "./Pages/Footer";
 
 const PagesCombined = () => {
   return (
@@ -27,6 +28,7 @@ const PagesCombined = () => {
       <Team />
       <Utility />
       <Faq />
+      <Footer />
     </>
   );
 };

@@ -68,7 +68,7 @@ const Utility = () => {
           </p>
         </div>
         <div className='lg:w-3/5 md:w-3/5 sm:w-3/5 xs:w-10/12'>
-          <p className='text-center text-xl md:text-xl sm:text-lg xs:text-base font-semibold'>
+          <p className='text-center md:text-xl sm:text-lg xs:text-md'>
             NAUTZ will be launching with utility already in place before the
             presale even begins, and get set go one we begin the presale, with
             regular sneak peeks and explanations in our discord.

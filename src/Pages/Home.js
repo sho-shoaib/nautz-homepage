@@ -4,6 +4,7 @@ import bgAstroImgCom from "../assets/compress/bg-AstroImg_1.png";
 import { motion } from "framer-motion";
 import useWindowDimensions from "../Components/getWindowDimensions";
 import { Box } from "@mui/material";
+import logo from "../assets/compress/logo.png";
 
 const Home = () => {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
@@ -62,19 +63,20 @@ const Home = () => {
         <p className='lg:text-4xl md:text-3xl sm:text-3xl text-2xl font-extrabold'>
           Welcome to
         </p>
-        <motion.h1
-          className='lg:text-9xl md:text-8xl sm:text-8xl xs:text-7xl  font-black title-home mb-4 lg:mb-4 sm:mb-1 xs:mb-1 md:mb-4'
-          initial={{ letterSpacing: "0.3em", opacity: 0, scale: 1.5 }}
-          animate={{ letterSpacing: "0.05em", opacity: 1, scale: 1 }}
+        <motion.div
+          className='font-black title-home mb-4 lg:mb-4 sm:mb-1 xs:mb-1 md:mb-4 px-6'
+          initial={{ opacity: 0, scale: 1.5 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 1,
-            type: "spring",
+            duration: 0.75,
+            type: "tween",
             stiffness: 100,
             delay: 0.2,
+            ease: "easeOut",
           }}
         >
-          NAUTZ
-        </motion.h1>
+          <img src={logo} alt='logo' />
+        </motion.div>
         <motion.h1
           className='text-2xl lg:text-2xl md:text-2xl sm:text-2xl xs:text-lg font-base sm:max-w-lg text-center px-5 xs:max-w-xs'
           initial={{ opacity: 0 }}

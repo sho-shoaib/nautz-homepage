@@ -22,17 +22,19 @@ const ParaAbout = () => {
   }, [inView]);
 
   return (
-    <motion.p
-      className='lg:text-2xl md:text-xl sm:text-lg xs:text-md font-semibold lg:w-7/12 leading-normal xs:text-center xs:w-9/12 xs:mx-auto md:text-left md:mx-0'
-      ref={ref}
-      animate={animation}
-      initial={{ opacity: 0, x: -50 }}
-    >
-      We created and curated 5000 Nautz that were selected and created from
-      20,000,000 Possiblities, each NFT has it's own unique charateristics and
-      traits. Even the common ones have such surreal traits that it goes beyond
-      the expectations of the HODLers!
-    </motion.p>
+    <div className='flex justify-between gap-16 items-center'>
+      <motion.p
+        className='lg:text-xl md:text-xl sm:text-lg xs:text-md w-full leading-normal  xs:mx-auto md:mx-0 text-justify'
+        ref={ref}
+        animate={animation}
+        initial={{ opacity: 0, x: -50 }}
+      >
+        We created and curated 5000 Nautz that were selected and created from
+        20,000,000 Possiblities, each NFT has it's own unique charateristics and
+        traits. Even the common ones have such surreal traits that it goes
+        beyond the expectations of the HODLers!
+      </motion.p>
+    </div>
   );
 };
 
