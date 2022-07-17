@@ -22,14 +22,14 @@ const TitleSpecialityPhone = () => {
   }, [inView]);
 
   return (
-    <motion.p
+    <motion.h4
       className='lg:text-5xl md:text-4xl sm:text-4xl xs:text-3xl font-bold  text-indigo-500 text-center'
       ref={ref}
       animate={animation}
       initial={{ opacity: 0, y: 50 }}
     >
       What makes your NFT soo special?
-    </motion.p>
+    </motion.h4>
   );
 };
 

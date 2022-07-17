@@ -3,9 +3,25 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const TeamCard = ({ name, image, work, insta, twitter, linkedIn, object }) => {
+const TeamCard = ({
+  name,
+  image,
+  work,
+  insta,
+  twitter,
+  linkedIn,
+  object,
+  centerLg,
+  centerMd,
+}) => {
   return (
-    <div className=' rounded-2xl border-8 w-72 justify-self-center border-black overflow-hidden'>
+    <div
+      className={` rounded-2xl border-8 w-72 border-black overflow-hidden ${
+        centerLg ? "lg:col-span-3" : "lg:col-span-2"
+      } ${
+        centerMd ? "md:col-span-4 sm:col-span-4" : "md:col-span-2 sm:col-span-2"
+      } xs:col-span-1`}
+    >
       <div className='h-72 w-72 overflow-hidden'>
         <img
           src={image}

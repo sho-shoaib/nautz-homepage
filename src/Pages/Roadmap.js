@@ -44,12 +44,12 @@ const Roadmap = () => {
         className='m-auto px-5 pb-20 pt-20'
       >
         <div className='flex flex-col items-center xs:mb-14 md:mb-20'>
-          <p className='lg:text-4xl sm:text-3xl xs:text-2xl font-bold mb-3'>
+          <h3 className='lg:text-4xl sm:text-3xl xs:text-2xl font-bold mb-3'>
             TO THE MOON
-          </p>
-          <h1 className='lg:text-8xl md:text-8xl sm:text-6xl xs:text-5xl font-black tracking-wide title-roadmap'>
+          </h3>
+          <h3 className='lg:text-8xl md:text-8xl sm:text-6xl xs:text-5xl font-black tracking-wide title-roadmap'>
             ROADMAP
-          </h1>
+          </h3>
         </div>
         {width > 780 ? (
           <div>

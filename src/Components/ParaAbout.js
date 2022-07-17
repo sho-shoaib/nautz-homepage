@@ -23,7 +23,7 @@ const ParaAbout = () => {
 
   return (
     <div className='flex justify-between gap-16 items-center'>
-      <motion.p
+      <motion.h4
         className='lg:text-xl md:text-xl sm:text-lg xs:text-md w-full leading-normal  xs:mx-auto md:mx-0 text-justify'
         ref={ref}
         animate={animation}
@@ -33,7 +33,7 @@ const ParaAbout = () => {
         20,000,000 Possiblities, each NFT has it's own unique charateristics and
         traits. Even the common ones have such surreal traits that it goes
         beyond the expectations of the HODLers!
-      </motion.p>
+      </motion.h4>
     </div>
   );
 };

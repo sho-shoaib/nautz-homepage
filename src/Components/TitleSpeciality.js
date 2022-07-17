@@ -22,7 +22,7 @@ const TitleSpeciality = () => {
   }, [inView]);
 
   return (
-    <motion.p
+    <motion.h4
       className='lg:text-5xl md:text-4xl sm:text-4xl xs:text-3xl font-bold md:mb-10 xs:mb-7 text-indigo-500'
       ref={ref}
       animate={animation}
@@ -31,7 +31,7 @@ const TitleSpeciality = () => {
       What makes your NFT
       <br />
       soo special?
-    </motion.p>
+    </motion.h4>
   );
 };
 

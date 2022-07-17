@@ -22,7 +22,7 @@ const ParaSpeciality = () => {
   }, [inView]);
 
   return (
-    <motion.p
+    <motion.h5
       className='md:text-lg sm:text-lg xs:text-md text-justify'
       ref={ref}
       animate={animation}
@@ -37,7 +37,7 @@ const ParaSpeciality = () => {
       PRODUCTION HOUSE, special clubs, free entries to all NAUTZ sponsored
       events that will take place worldwide. Secondarily you will be eligible
       for giveaways only for our NAUTZ holders.
-    </motion.p>
+    </motion.h5>
   );
 };
 

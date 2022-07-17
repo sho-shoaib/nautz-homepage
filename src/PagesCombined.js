@@ -9,6 +9,7 @@ import Faq from "./Pages/Faq";
 import Team from "./Pages/Team";
 import Speciality from "./Pages/Speciality";
 import Footer from "./Pages/Footer";
+import FooterBg from "./Components/FooterBg";
 
 const PagesCombined = () => {
   return (
@@ -28,7 +29,7 @@ const PagesCombined = () => {
       <Team />
       <Utility />
       <Faq />
-      <Footer />
+      <FooterBg />
     </>
   );
 };

@@ -47,11 +47,11 @@ const About = () => {
             animate={animation1}
             className='lg:w-6/12 md:w-6/12 sm:w-full'
           >
-            <h1 className='lg:text-6xl md:text-5xl sm:text-5xl xs:text-4xl font-black md:mb-10 xs:mb-7'>
-              What is <span className='title-about'>NAUTZ</span> ?
-            </h1>
+            <h2 className='lg:text-6xl md:text-5xl sm:text-5xl xs:text-4xl font-black md:mb-10 xs:mb-7'>
+              What is <h2 className='title-about inline'>NAUTZ</h2> ?
+            </h2>
             <div>
-              <h1 className='lg:text-lg md:text-lg sm:text-md xs:text-base font-base md:mb-6 xs:mb-10 w-full text-justify'>
+              <h4 className='lg:text-lg md:text-lg sm:text-md xs:text-base font-base md:mb-6 xs:mb-10 w-full text-justify'>
                 Nautz is a collection of 5000 different NFTs each blended in a
                 unique way. Also on the top of the 5000 NFTs, there will be 100
                 additional NFTs that are made by different types of artists
@@ -60,7 +60,7 @@ const About = () => {
                 efficient smart contract that is ERC 721A. Minting will be in
                 two phases, presale (only for whitelisted wallets) and public
                 sale which will be for everyone.
-              </h1>
+              </h4>
             </div>
             {width > 900 && (
               <Button

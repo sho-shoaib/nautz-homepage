@@ -46,7 +46,7 @@ const GridAbout = () => {
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
         <img
           src={naut1}
-          alt='naut1'
+          alt='naut2'
           className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
         />
       </div>
@@ -54,7 +54,7 @@ const GridAbout = () => {
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
         <img
           src={naut15}
-          alt='naut1'
+          alt='naut3'
           className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
         />
       </div>
@@ -62,7 +62,7 @@ const GridAbout = () => {
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
         <img
           src={naut3com}
-          alt='naut1'
+          alt='naut4'
           className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
         />
       </div>
@@ -70,7 +70,7 @@ const GridAbout = () => {
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
         <img
           src={naut11}
-          alt='naut1'
+          alt='naut5'
           className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
         />
       </div>
@@ -78,7 +78,7 @@ const GridAbout = () => {
       <div className='bg-slate-200 rounded-lg overflow-hidden'>
         <img
           src={naut2com}
-          alt='naut1'
+          alt='naut6'
           className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
         />
       </div>

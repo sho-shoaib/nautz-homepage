@@ -83,7 +83,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          5000 Super Cool <span className='font-semibold'>AstroNAUTZ</span>{" "}
+          5000 Super Cool <h1 className='font-semibold inline'>AstroNAUTZ</h1>{" "}
           About To Take Off Soon
         </motion.h1>
       </div>

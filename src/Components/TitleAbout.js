@@ -22,19 +22,19 @@ const TitleAbout = () => {
   }, [inView]);
 
   return (
-    <motion.h1
+    <motion.h2
       className='lg:w-full xs:w-full xs:text-center md:text-left lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl font-bold mb-6 lg:leading-relaxed md:leading-normal
       sm:leading-normal xs:leading-relaxed'
       ref={ref}
       animate={animation}
       initial={{ opacity: 0, x: -100 }}
     >
-      <span className='text-indigo-500'>5000</span> NAUTZ Generated From
+      <h2 className='text-indigo-500 inline'>5000</h2> NAUTZ Generated From
       <br />
-      <span className='lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl'>
-        <span className='text-indigo-500'>20,000,000</span> Possibilities
-      </span>
-    </motion.h1>
+      <h2 className='lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl'>
+        <h2 className='text-indigo-500 inline'>20,000,000</h2> Possibilities
+      </h2>
+    </motion.h2>
   );
 };
 

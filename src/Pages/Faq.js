@@ -56,9 +56,9 @@ const Faq = () => {
         maxWidth={"lg"}
         className='mx-auto flex flex-col items-center pb-32 gap-10 pt-16'
       >
-        <p className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl font-semibold text-glow'>
+        <h4 className='lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl font-semibold text-glow'>
           FAQs
-        </p>
+        </h4>
         <div className='lg:w-8/12 md:w-full lg:p-0 md:px-25 sm:px-15 xs:px-5'>
           <Accordion className='glass-faq text-white lg:p-4 md:p-4 sm:p-4 xs:p-2'>
             <AccordionSummary
@@ -66,12 +66,12 @@ const Faq = () => {
               aria-controls='panel1a-content'
               id='panel1a-header'
             >
-              <p className='lg:text-xl md:text-xl sm:text-xl xs:text-lg'>
+              <h2 className='lg:text-xl md:text-xl sm:text-xl xs:text-lg'>
                 How can I buy NAUTZ NFT?
-              </p>
+              </h2>
             </AccordionSummary>
             <AccordionDetails>
-              <p className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
+              <h5 className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
                 Get on the Nautz whitelist and mint it during the presale at a
                 discounted price or mint during the public sale which will be
                 open for all. You can mint NAUTZ on our website, the details
@@ -83,7 +83,7 @@ const Faq = () => {
                 >
                   Opensea.io
                 </a>
-              </p>
+              </h5>
             </AccordionDetails>
           </Accordion>
           {data.map(({ ques, ans }) => {
@@ -94,14 +94,14 @@ const Faq = () => {
                   aria-controls='panel1a-content'
                   id='panel1a-header'
                 >
-                  <p className='lg:text-xl md:text-xl sm:text-xl xs:text-lg'>
+                  <h4 className='lg:text-xl md:text-xl sm:text-xl xs:text-lg'>
                     {ques}
-                  </p>
+                  </h4>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <p className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
+                  <h5 className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
                     {ans}
-                  </p>
+                  </h5>
                 </AccordionDetails>
               </Accordion>
             );
