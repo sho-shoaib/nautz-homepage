@@ -1,44 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="description" content="Nautz is a collection of 5000 different NFTs each blended in a unique way. We created and curated 5000 Nautz from 20,000,000 Possibilities">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>Nautz | Nautz NFT Collection Official Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5LVP21BSY"></script>
-    <!-- <script src="../src/loader.js"></script> -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-R5LVP21BSY');
-    </script>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <!-- <div id="app">
-    </div> -->
-    <div id="root"></div>
-    <div class="space-bg">
-      <canvas id='canvas'></canvas>
-      </div>
-    <script>
-      'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd &&
-      (window._trfd=[]),_trfd.push(
-      
-      {'tccl.baseHost':'$BASEHOST'}),_trfd.push(
-      
-      {'ap':'$AP'},{'server':'$HOSTNAME'},{'id':'$ID'})
-      // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
-      </script>
-      <script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
-      <script>
-        "use strict";
+"use strict";
+/*
+ * Table of Contents:
+ *
+ *   types:
+ *   - vec2 [0, 0]
+ *   - vec3 [0, 0, 0]
+ *
+ *   classes:
+ *   - Star
+ *   - StarField
+ *
+ *   helper functions:
+ *   - randRange
+ *   - mapRange
+ *   - distance
+ *   - limitToCircle
+ *   - isInEllipse
+ *   - getPointerInput // sends mouse or touch data to a callback
+ *   - setup // where we initialize the Starfield.
+ *
+ *   ENV Vars:
+ *   - IS_HIGH_RES // sort of an environment variable for detecting retina type screens
+ *   - IS_MOBILE // detect if it's android, ios, or other common mobile devices
+ *   - IS_HIGH_RES_AND_MOBILE // just combines the two above for convenience
+ */
+// am I weird for enjoying writing functions like this by hand? lol
 function randRange(min, max) {
   return Math.random() * (max - min) + min;
 }
@@ -49,6 +35,11 @@ function distance(dot1, dot2) {
   let [x1, y1, x2, y2] = [dot1[0], dot1[1], dot2[0], dot2[1]];
   return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
 }
+// not used, but fun to write after figuring out the 2D version
+// function distance3D(dot1, dot2) {
+//   let [x1, y1, z1, x2, y2, z2] = [dot1[0], dot1[1], dot1[2], dot2[0], dot2[1], dot2[2]];
+//   return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2) + Math.pow(z1 - z2, 2));
+// }
 function limitToCircle(x, y, a, b, r) {
   let dist = distance([x, y], [a, b]);
   if (dist <= r) {
@@ -94,9 +85,11 @@ class Star {
     this.x = randRange(-size, size);
     this.y = randRange(-size, size);
     this.z = randRange(0, depth);
+    // previous position for the trails
     this.px = this.x;
     this.py = this.y;
     this.pz = this.z;
+    // purple, green, and blue, but randomized ^.^
     this.color = `rgb(${randRange(110, 200)},${randRange(110, 240)},${randRange(
       230,
       255
@@ -135,31 +128,46 @@ class Star {
       let slowBy = mapRange(this.z, 0, size, 0.3, 0.4);
       defaultSideSpeed *= slowBy;
     }
+    /*
+     * Easter Egg #1 ^.^
+     * uncomment the snippet below to make 'em wiggle
+     */
+    // let movementFuzz = Math.sin(deltaTime) * randRange(-50, 50);
+    // this.y -= movementFuzz;
+    // move forward, obvi
     this.z -= defaultSpeed * zSpeed * deltaTime;
+    // and sideways
     this.x -= defaultSideSpeed * xSpeed * deltaTime;
+    // keep within bounds on z axis
     let fuzzyDepth = randRange(depth, depthMinusAQuarter);
+    // keep within bounds on x axis
     let fuzzySize = randRange(size, sizeAndAQuarter);
     if (this.z < 1) {
+      // z negative
       this.z = fuzzyDepth;
       this.pz = this.z;
       this.resetX();
       this.resetY();
     } else if (this.z > depth) {
+      // z positive
       this.z = 0;
       this.pz = this.z;
       this.resetX();
       this.resetY();
     } else if (this.x < -fuzzySize) {
+      // x negative
       this.x = size;
       this.px = this.x;
       this.resetY();
       this.resetZ();
     } else if (this.x > fuzzySize) {
+      // x positive
       this.x = -size;
       this.px = this.x;
       this.resetY();
       this.resetZ();
     } else if (this.y < -fuzzySize) {
+      // y negative
       this.y = size;
       this.py = this.y;
       this.resetX();
@@ -199,6 +207,19 @@ class Star {
     context.lineWidth = radius;
     context.strokeStyle = this.color;
     context.stroke();
+    /*
+     * Easter Egg #2 ^.^
+     * uncomment the snippet below to add little tracer lines that follow the mouse/touch
+     */
+    // if (Math.min(width, height)/2 > distance([mouseX, mouseY], [sx, sy]) && this.z < depth/2) {
+    //   context.beginPath();
+    //   context.moveTo(sx, sy);
+    //   let [mX, mY] = limitToCircle(mouseX, mouseY, sx, sy, 50);
+    //   context.lineTo(mX, mY);
+    //   context.lineWidth = radius;
+    //   context.strokeStyle = this.color.replace(')', `, ${mapRange(this.z, 0, depth, 0.1, 0.6)})`);
+    //   context.stroke();
+    // }
   }
 }
 const getPointerInput = (callback, element = document, delay = 600) => {
@@ -215,14 +236,18 @@ const getPointerInput = (callback, element = document, delay = 600) => {
     isMoving: false,
     wasMoving: false,
   };
-  let timer = false;
-  let animFrame = false;
+  let timer = false; // used to track when pointer motion stops
+  let animFrame = false; // debounces pointer motion so we don't do extra work needlessly
+  // this fn is called on touch and mouse events
   const handlePointer = (event) => {
+    // if there's an animation frame already for this handler, cancel it
     if (animFrame) {
       animFrame = window.cancelAnimationFrame(animFrame);
     }
+    // and instead it'll run the latest animation frame
     animFrame = window.requestAnimationFrame(() => {
       let x, y;
+      // handle mobile first, otherwise desktop/laptop
       if (event.touches) {
         [x, y] = [event.touches[0].clientX, event.touches[0].clientY];
       } else {
@@ -230,9 +255,11 @@ const getPointerInput = (callback, element = document, delay = 600) => {
       }
       pointer.x = x;
       pointer.y = y;
+      // pointer has moved at least once
       if (!pointer.hasMoved) {
         pointer.hasMoved = true;
       }
+      // pointer is currently moving
       pointer.wasMoving = pointer.isMoving;
       pointer.isMoving = true;
       // send the current pointer data to it's consumers
@@ -331,7 +358,7 @@ class StarField {
   setCanvasSize() {
     // fit canvas to parent
     this.canvas.width = this.canvas.parentElement.offsetWidth;
-    this.canvas.height = window.innerHeight;
+    this.canvas.height = this.canvas.parentElement.offsetHeight;
     let width = canvas.offsetWidth,
       height = canvas.offsetHeight,
       size = Math.max(width, height),
@@ -389,6 +416,40 @@ class StarField {
       this.zSpeed = 0;
     }
     let xSpin = this.mouseX / width;
+    // ellipse
+    context.beginPath();
+    context.ellipse(
+      ellipseX,
+      ellipseY,
+      ellipseW,
+      ellipseH,
+      xSpin,
+      0,
+      2 * Math.PI
+    );
+    context.strokeStyle = `rgba(255, 255, 255, ${this.mouseControlAlpha})`;
+    context.lineWidth = 2;
+    context.stroke();
+    let scaleFactor = 1;
+    if (-this.mouseY > 0) {
+      scaleFactor = mapRange(Math.abs(this.mouseX / width), 0, 1, 2, 0);
+    }
+    let lineDist = distance(
+      [ellipseX, ellipseY],
+      [this.mouseX, this.mouseY * scaleFactor]
+    );
+    let [limitedMouseX, limitedMouseY] = limitToCircle(
+      this.mouseX,
+      this.mouseY,
+      ellipseX,
+      ellipseY,
+      lineDist / 2
+    );
+    // input-tracking line
+    context.beginPath();
+    context.moveTo(ellipseX, ellipseY);
+    context.lineTo(limitedMouseX, limitedMouseY);
+    context.stroke();
   }
   render() {
     if (this.showMouseControls) {
@@ -397,6 +458,10 @@ class StarField {
         this.mouseControlAlpha = 0.3;
         this.drawMouseControl();
       } else {
+        // when mouse stops moving, start fading out the opacity slowly
+        // TODO: make it actually time based so it fades out over the period you pass it
+        // just kinda hacked in a rough approximation by feel on my machine lol
+        // good enough for now
         this.mouseControlAlpha -= (0.25 * this.deltaTime) / this.UIFadeDelay;
         this.drawMouseControl();
       }
@@ -460,13 +525,24 @@ class StarField {
 }
 function setup() {
   let canvas = document.getElementById("canvas");
-  const howManyStars = 1500;
+  const howManyStars = 1000;
   if (IS_MOBILE) howManyStars = 500;
   let starfield = new StarField(howManyStars, canvas);
   starfield.startRenderLoop();
+  let UIToggleButton = document.getElementById("mouse-control-control");
+  UIToggleButton.addEventListener(
+    "click",
+    (e) => {
+      starfield.showMouseControls = !starfield.showMouseControls;
+      if (starfield.showMouseControls) {
+        starfield.mouseControlAlpha = 0.3;
+        UIToggleButton.classList.remove("off");
+      } else {
+        UIToggleButton.classList.add("off");
+      }
+      e.preventDefault();
+    },
+    true
+  );
 }
 window.onload = setup();
-
-      </script>
-  </body>
-</html>

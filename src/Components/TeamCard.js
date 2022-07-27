@@ -16,11 +16,7 @@ const TeamCard = ({
 }) => {
   return (
     <div
-      className={` rounded-2xl border-8 w-72 border-black overflow-hidden ${
-        centerLg ? "lg:col-span-3" : "lg:col-span-2"
-      } ${
-        centerMd ? "md:col-span-4 sm:col-span-4" : "md:col-span-2 sm:col-span-2"
-      } xs:col-span-1`}
+      className={` rounded-2xl border-8 w-72 border-black overflow-hidden col-span-1`}
     >
       <div className='h-72 w-72 overflow-hidden'>
         <img

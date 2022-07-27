@@ -1,18 +1,59 @@
-import React from "react";
-import naut11 from "../assets/compress/naut11.png";
-import naut12 from "../assets/compress/naut12.png";
-import naut1 from "../assets/compress/naut-1_1.png";
-import naut2com from "../assets/compress/naut-2_1.png";
-import naut3com from "../assets/compress/naut-3_1.png";
-import naut15 from "../assets/compress/naut15.jpeg";
+import React, { useState } from "react";
+import astro1 from "../assets/compress/astro-1.png";
+import astro2 from "../assets/compress/astro-2.png";
+import astro3 from "../assets/compress/astro-3.png";
+import astro4 from "../assets/compress/astro-4.png";
+import astro5 from "../assets/compress/astro-5.png";
+import astro6 from "../assets/compress/astro-6.png";
+import astroBg1 from "../assets/compress/astro-bg-1.jpg";
+import astroBg2 from "../assets/compress/astro-bg-2.jpg";
+import astroBg3 from "../assets/compress/astro-bg-3.jpg";
+import astroBg4 from "../assets/compress/astro-bg-4.jpg";
+import astroBg5 from "../assets/compress/astro-bg-5.jpg";
+import astroBg6 from "../assets/compress/astro-bg-6.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
+import GridCard from "./GridCard";
+
+const images = [
+  {
+    img: astro1,
+    label: "astro-1",
+    bg: astroBg1,
+  },
+  {
+    img: astro2,
+    label: "astro-2",
+    bg: astroBg2,
+  },
+  {
+    img: astro3,
+    label: "astro-3",
+    bg: astroBg3,
+  },
+  {
+    img: astro4,
+    label: "astro-4",
+    bg: astroBg4,
+  },
+  {
+    img: astro5,
+    label: "astro-5",
+    bg: astroBg5,
+  },
+  {
+    img: astro6,
+    label: "astro-6",
+    bg: astroBg6,
+  },
+];
 
 const GridAbout = () => {
   const [ref, inView] = useInView();
   const animation = useAnimation();
+  const [hoverCard, setHoverCard] = useState(false);
 
   useEffect(() => {
     if (inView) {
@@ -35,53 +76,10 @@ const GridAbout = () => {
       initial={{ y: 100, opacity: 0, scale: 0.9 }}
       animate={animation}
     >
-      <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img
-          src={naut12}
-          alt='naut1'
-          className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
-        />
-      </div>
-
-      <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img
-          src={naut1}
-          alt='naut2'
-          className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
-        />
-      </div>
-
-      <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img
-          src={naut15}
-          alt='naut3'
-          className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
-        />
-      </div>
-
-      <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img
-          src={naut3com}
-          alt='naut4'
-          className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
-        />
-      </div>
-
-      <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img
-          src={naut11}
-          alt='naut5'
-          className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
-        />
-      </div>
-
-      <div className='bg-slate-200 rounded-lg overflow-hidden'>
-        <img
-          src={naut2com}
-          alt='naut6'
-          className='object-cover h-full w-full hover:scale-110 transition ease-in-out duration-300'
-        />
-      </div>
+      {images.map((item, i) => {
+        const { img, label, bg } = item;
+        return <GridCard key={i} img={img} label={label} bg={bg} />;
+      })}
     </motion.div>
   );
 };

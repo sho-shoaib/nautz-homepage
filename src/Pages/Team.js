@@ -3,7 +3,6 @@ import React from "react";
 import TeamCard from "../Components/TeamCard";
 import teamAbhay from "../assets/compress/team-abhay.jpeg";
 import teamFarhan from "../assets/compress/team-farhan.jpeg";
-import teamShoaib from "../assets/compress/team-shoaib.jpeg";
 import teamPariksit from "../assets/compress/team-pariksit.jpeg";
 import teamMehul from "../assets/compress/team-mehul.jpeg";
 import { motion } from "framer-motion";
@@ -52,15 +51,6 @@ const data = [
     centerLg: true,
     centerMd: false,
   },
-  {
-    name: "Shoaib Shaikh",
-    work: "Developer",
-    image: teamShoaib,
-    linkedIn: "https://www.linkedin.com/in/shoaib-shaikh-658a62232/",
-    object: "center",
-    centerLg: true,
-    centerMd: true,
-  },
 ];
 
 const Team = () => {
@@ -94,7 +84,7 @@ const Team = () => {
       <h3 className='lg:text-6xl sm:text-5xl xs:text-4xl font-bold mb-16 text-center text-glow'>
         MEET THE NAUTZ
       </h3>
-      <div className='w-full grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-4 xs:grid-cols-1 justify-items-center gap-y-16'>
+      <div className='w-full grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 justify-items-center gap-y-16 gap-x-10'>
         {data.map(
           ({
             name,

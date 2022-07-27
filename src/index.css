@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+#root {
+  background: transparent;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -185,3 +189,110 @@ video {
   }
 }
 
+/* full space background */
+.space-bg {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #050014;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#mouse-control-control {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px 10px;
+  border: solid 2px;
+  border-radius: 6px;
+  outline: none;
+  opacity: 1;
+  transition: transform 0.1s cubic-bezier(0.09, 0.95, 0.14, 1.25), opacity 0.1s cubic-bezier(0.09, 0.95, 0.14, 1.25);
+}
+#mouse-control-control:before {
+  content: attr(data-on);
+}
+#mouse-control-control.off {
+  opacity: 0.3;
+  transform: translate(-2px, 2px);
+}
+#mouse-control-control.off:before {
+  content: attr(data-off);
+}
+#mouse-control-control:hover {
+  color: rgba(225, 205, 255, 0.6);
+}
+
+button {
+  font-size: 1em;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  button {
+    font-size: 2em;
+  }
+}
+
+/* NOASIS */
+.noasis-container {
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+  background-size: cover;
+  backdrop-filter:  brightness(50%);
+  background-color: #00142B;
+}
+
+canvas {
+  display: block;
+}
+
+#canvas_container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.9em;
+  background: #000000;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #000000;
+} */

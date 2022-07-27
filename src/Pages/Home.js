@@ -17,13 +17,13 @@ const Home = () => {
   return (
     <Box
       id='home'
-      className='w-full overflow-hidden flex justify-center items-center relative'
+      className='w-full overflow-hidden flex justify-center items-center relative '
       sx={{ height: { xs: "75vh", sm: "91vh", md: "91vh" } }}
     >
       {width > 600 ? (
         <div
-          className={`-z-10 absolute top-0 h-screen w-screen overflow-hidden bg-${
-            isVideoLoaded ? "black" : "indigo-900"
+          className={`-z-10 absolute top-0 h-screen w-screen overflow-hidden ${
+            isVideoLoaded ? "bg-black" : "bg-black"
           }`}
         >
           <img
