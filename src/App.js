@@ -1,7 +1,6 @@
-import PagesCombined from "./PagesCombined";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Noasis from "./noasis/Noasis";
+import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
+import AnimatedRoutes from "./Components/AnimatedRoutes";
 
 function App() {
   const [playing, setPlaying] = useState(false);
@@ -15,16 +14,11 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route
-          path='/'
-          element={<PagesCombined playSound={playSound} />}
-        ></Route>
-        <Route
-          path='/8f0f6134-de3d-4414-97f3-2f99beecc209'
-          element={<Noasis playing={playing} pauseSound={pauseSound} />}
-        ></Route>
-      </Routes>
+      <AnimatedRoutes
+        playSound={playSound}
+        pauseSound={pauseSound}
+        playing={playing}
+      />
     </BrowserRouter>
   );
 }

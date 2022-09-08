@@ -4,6 +4,10 @@
 
 :root {
   --bgColor: #1c2329;
+  --palet1: #5aaaff;
+  --palet2: #3891f0;
+  --palet3: #006fe3;
+  --palet4: #0055b0;
 }
 
 #infographic .circle {
@@ -125,26 +129,39 @@
 #infographic article[data-step="16"] {
   margin-left: -250px;
 }
+#infographic article[data-step="17"] {
+  margin-left: 155px;
+}
+#infographic article[data-step="18"] {
+  margin-left: -30px;
+}
 #infographic .one article header {
   background-color: rgba(37, 59, 143, 0.3);
-  color: #8f2543;
+  color: var(--palet1);
 }
 #infographic .one article header i {
-  background-color: #007bff;
+  background-color: var(--palet1);
 }
 #infographic .two article header {
   background-color: rgba(0, 108, 99, 0.1);
-  color: #006c63;
+  color: var(--palet2);
 }
 #infographic .two article header i {
-  background-color: #28a745;
+  background-color: var(--palet2);
 }
 #infographic .three article header {
   background-color: rgba(69, 80, 162, 0.1);
-  color: #dc3545;
+  color: var(--palet3);
 }
 #infographic .three article header i {
-  background-color: #dc3545;
+  background-color: var(--palet3);
+}
+#infographic .four article header {
+  background-color: rgba(69, 80, 162, 0.1);
+  color: var(--palet4);
+}
+#infographic .four article header i {
+  background-color: var(--palet4);
 }
 #infographic article:hover header i {
   transform: scale(1.2);

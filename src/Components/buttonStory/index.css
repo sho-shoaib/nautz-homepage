@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.story-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.story-btn {
+  display: block;
+  width: 280px;
+  height: 80px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-indent: -9999px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  /* transition: all 0.35s; */
+}
+
+.story-btn:before,
+.story-btn:after {
+  position: absolute;
+  content: attr(data-title);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 2px solid #333;
+  text-indent: 0;
+  transition: all 0.35s;
+  padding-top: 20px;
+}
+
+.story-btn:before {
+  color: #fff;
+  background: #5B21B6;
+  transform-origin: left;
+  transform: translateX(0) rotateY(0deg);
+}
+
+.story-btn:after {
+  color: #fff;
+  background: transparent;
+  transform: translateX(-100%) rotateY(90deg);
+  transform-origin: right;
+}
+
+.story-btn:hover:before {
+  transform: translateX(100%) rotateY(90deg);
+}
+
+.story-btn:hover:after {
+  transform: translateX(0) rotateY(0deg);
+}

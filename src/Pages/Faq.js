@@ -22,12 +22,12 @@ const data = [
     ans: "Its NAUTZ my friend sky is the new floor.",
   },
   {
-    ques: "Will NAUTZ have utility?",
+    ques: "Does Nautz have utilities?",
     ans: "",
     custom: true,
   },
   {
-    ques: "What does NAUZT have planned next?",
+    ques: "What does NAUTZ have planned next?",
     ans: "",
     noasis: true,
   },
@@ -78,8 +78,8 @@ const Faq = ({ playSound }) => {
             </AccordionSummary>
             <AccordionDetails>
               <h5 className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
-                You can mint it right here on this website and listing will be
-                on{" "}
+                You can mint it right here on this website, and the listings
+                will be available on{" "}
                 <a
                   href='https://opensea.io/collection/nautz'
                   className='text-indigo-300 underline-offset-1 underline'
@@ -115,7 +115,7 @@ const Faq = ({ playSound }) => {
                     </button>
                   ) : custom ? (
                     <h5 className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
-                      What? didn't you see the
+                      The utilities are the highlight of Nautz! Check our
                       <Link
                         activeClass='active'
                         to='roadmap'

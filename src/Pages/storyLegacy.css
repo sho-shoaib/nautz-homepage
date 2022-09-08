@@ -1,0 +1,38 @@
+#headLegacy
+{
+	font-size: 8em !important;
+	text-align: center;
+	margin-left: -1.3em;
+	line-height: 0.8em;
+	letter-spacing: -0.05em;
+	color: #000;
+	text-shadow: -3px -3px 0 #6366F1, 3px -3px 0 #6366F1, -3px 3px 0 #6366F1, 3px 3px 0 #6366F1;
+	z-index: 1;
+  background-color: transparent;
+  margin-inline: auto;
+  margin-bottom: 0.35em;
+}
+
+@media (max-width: 800px) {
+  #headLegacy {
+    font-size: 5em !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #headLegacy {
+    font-size: 4em !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #headLegacy {
+    font-size: 3.5em !important;
+  }
+}
+
+@media (max-width: 350px) {
+  #headLegacy {
+    font-size: 3em !important;
+  }
+}

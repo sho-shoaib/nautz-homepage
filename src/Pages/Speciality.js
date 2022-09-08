@@ -13,8 +13,8 @@ const Speciality = () => {
     <>
       <Box maxWidth={"lg"} className='mx-auto'>
         {width > 1200 ? (
-          <div className='flex'>
-            <Box style={{ width: "269%" }}>
+          <div className='flex -translate-x-6'>
+            <Box style={{ width: "320%" }}>
               <img src={astro7} alt='BigImage' className='w-full h-full' />
             </Box>
             <div className='pt-28'>

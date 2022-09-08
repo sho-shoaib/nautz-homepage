@@ -134,8 +134,8 @@ const Footer = () => {
                   <p>FAQ</p>
                 </Link>
               </Box>
-              <div className='mt-3 opacity-75 mb-2'>
-                <p className='text-lg'>Email: nft@nautz.co</p>
+              <div className='mt-3 opacity-75 mb-2 translate-y-0.5'>
+                <p className='text-lg'>Email: admin@nautz.io</p>
               </div>
             </div>
             <div>
@@ -350,10 +350,10 @@ const Footer = () => {
 
             <div className='flex flex-col self-center'>
               <div
-                className='mt-2 opacity-75 mb-2'
+                className='mt-2 opacity-75 mb-2 translate-y-0.5'
                 style={{ transform: "translateX(3.1px)" }}
               >
-                <p className='text-sm'>Email: nft@nautz.co</p>
+                <p className='text-sm'>Email: admin@nautz.io</p>
               </div>
               <div className='flex gap-5'>
                 <a
@@ -443,10 +443,10 @@ const Footer = () => {
               </Box>
               <div className='flex flex-col self-center'>
                 <div
-                  className='mt-2 opacity-75 mb-2'
+                  className='mt-2 opacity-75 mb-2 translate-y-0.5'
                   style={{ transform: "translateX(2px)" }}
                 >
-                  <p className='text-sm'>Email: nft@nautz.co</p>
+                  <p className='text-sm'>Email: admin@nautz.io</p>
                 </div>
                 <div className='flex gap-5'>
                   <a

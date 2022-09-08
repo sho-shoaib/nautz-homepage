@@ -11,6 +11,7 @@ import naut14 from "../assets/compress/naut14.png";
 import TitleAbout from "../Components/TitleAbout";
 import ParaAbout from "../Components/ParaAbout";
 import GridAbout from "../Components/GridAbout";
+import ButtonStory from "../Components/buttonStory/ButtonStory";
 
 const About = () => {
   const { width } = useWindowDimensions();
@@ -33,14 +34,11 @@ const About = () => {
 
   return (
     <div>
-      <Box
-        id='about'
-        maxWidth={"lg"}
-        className='m-auto p-6 items-center pt-32 '
-      >
+      <Box id='about' maxWidth={"lg"} className='m-auto p-6 items-center pt-32'>
         <div
           ref={ref1}
-          className='w-full md:flex gap-10 md:justify-around xs:justify-center items-center mb-32'
+          className='w-full md:flex gap-10 md:justify-around xs:justify-center items-center'
+          style={{ marginBottom: "80px" }}
         >
           <motion.div
             initial={{ y: 50, opacity: 0, scale: 0.9 }}
@@ -52,26 +50,16 @@ const About = () => {
             </h2>
             <div>
               <h4 className='lg:text-lg md:text-lg sm:text-md xs:text-base font-base md:mb-6 xs:mb-10 w-full text-justify'>
-                Nautz is a collection of 5000 different NFTs each blended in a
-                unique way. Also on the top of the 5000 NFTs, there will be 100
-                additional NFTs that are made by different types of artists
-                whether it can be 2D, 3D, Traditional, Painter, Photographer, or
-                even music artists. We are using the latest and the most
-                efficient smart contract that is ERC 721A. Minting will be in
-                two phases, presale (only for whitelisted wallets) and public
-                sale which will be for everyone.
+                Nautz is a collection of 5000 different NFTs, each blended
+                uniquely. The NFTs have been created using ERC 721A, the latest
+                and most efficient smart contract. There will also be an
+                additional 100 NFTs created by various traditional and digital
+                artists, including 2D and 3D creators, painters, photographers,
+                and musicians. Moreover, minting will be in two phases, presale
+                (only for whitelisted wallets) and public sale, which will be
+                for everyone.
               </h4>
             </div>
-            {width > 900 && (
-              <Button
-                component={motion.button}
-                variant='outlined'
-                startIcon={<KeyboardArrowDownIcon />}
-                className='text-indigo-400 border-indigo-300 hover:border-indigo-300 hidden'
-              >
-                Read more
-              </Button>
-            )}
           </motion.div>
           <div
             className={`bg-slate-200 bg-center rounded-lg md:w-96 sm:w-9/12 xs:w-full xs:m-auto md:m-0`}
@@ -82,6 +70,7 @@ const About = () => {
             }}
           ></div>
         </div>
+        <ButtonStory />
         <div>
           <div className='w-full'>
             <TitleAbout />

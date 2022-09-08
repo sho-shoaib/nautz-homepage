@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import astro8 from "../assets/compress/astro-8.png";
+import astro11 from "../assets/compress/astro-11.png";
 import astro9 from "../assets/compress/astro-9.png";
 import astro10 from "../assets/compress/astro-10.png";
 import { motion } from "framer-motion";
@@ -45,7 +45,7 @@ const Utility = () => {
           </div>
           <div className='image-container lg:w-96 md:w-96 sm:w-80 xs:w-60 lg:h-96 md:h-96 sm:h-80 xs:h-60 z-10 border-b-4'>
             <img
-              src={astro8}
+              src={astro11}
               alt='nautNoBg2'
               className='object-cover w-full h-full'
             />
@@ -63,15 +63,15 @@ const Utility = () => {
             Join the community for
             <br />
             <h4 className='lg:text-7xl md:text-6xl sm:text-4xl xs:text-3xl text-indigo-400 text-center'>
-              Early access to pre-sale and community perks
+              Early access to pre-sale and exciting perks!
             </h4>
           </h4>
         </div>
         <div className='lg:w-3/5 md:w-3/5 sm:w-3/5 xs:w-10/12'>
           <h3 className='text-center md:text-xl sm:text-lg xs:text-md'>
-            NAUTZ will be launching with utility already in place before the
-            presale even begins, and get set go. Once we begin the presale, with
-            regular sneak peeks and explanations in our discord.
+            NAUTZ will launch with the utilities already in place before the
+            presale even begins! Once we start the presale, our discord will
+            have regular sneak peeks and details.
           </h3>
         </div>
       </Box>

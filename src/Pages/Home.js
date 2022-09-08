@@ -28,7 +28,7 @@ const Home = () => {
         >
           <img
             src={bgAstroImgCom}
-            className='w-full object-cover object-top '
+            className='w-full object-cover object-top'
             alt='thumb'
             style={{ opacity: isVideoLoaded ? 0 : 0.55 }}
           />
@@ -38,6 +38,7 @@ const Home = () => {
             muted
             onLoadedData={onLoadedData}
             style={{ opacity: isVideoLoaded ? 0.55 : 0 }}
+            className='w-full h-full'
           >
             <source src={bgAstroVidCom} type='video/mp4' />
           </video>

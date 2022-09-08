@@ -29,14 +29,15 @@ const ParaSpeciality = () => {
       initial={{ opacity: 0, y: 50 }}
     >
       Your NFT is special because no one else owns them. Owning Nautz means it's
-      fully yours no one in the space has rights on it! Each Nautz NFT is
-      specially hand-made and programmatically generated so each one is 100%
-      different. 5000 Nautz have been made from 20,000,000 possibilities. All
-      Nautz are stored as ERC-721A tokens on the Ethereum Blockchain. Owning one
-      Nautz will primarily give you access to 20-40% discount at NAUTZ
-      PRODUCTION HOUSE, special clubs, free entries to all NAUTZ sponsored
-      events that will take place worldwide. Secondarily you will be eligible
-      for giveaways only for our NAUTZ holders.
+      entirely yours; no one else in the whole of space has rights to it! The
+      Nautz NFTs are specially hand-made and programmatically generated, so each
+      one is 100% unique. The 5000 Nautz have been specially created and curated
+      from over 20,000,000 possibilities. All Nautz are stored as ERC-721A
+      tokens on the Ethereum Blockchain. Owning one Nautz will primarily give
+      you a hefty 20-40% discount at the NAUTZ PRODUCTION HOUSE, exclusive
+      access to special clubs, and free entries to all events sponsored by Nautz
+      around the world. The Nautz holders will also be eligible for exciting
+      giveaways in the community.
     </motion.h5>
   );
 };

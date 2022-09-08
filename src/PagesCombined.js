@@ -10,30 +10,33 @@ import Speciality from "./Pages/Speciality";
 import FooterBg from "./Components/FooterBg";
 import bgSpaceImgcom from "./assets/compress/bg-spaceImg_1.jpg";
 import useWindowDimensions from "./Components/getWindowDimensions";
+import { motion } from "framer-motion";
 
 const PagesCombined = ({ playSound }) => {
   const { width } = useWindowDimensions();
 
   return (
     <>
-      <Home />
-      <NavbarHome />
-      {width <= 500 && (
-        <div
-          className='h-screen w-screen fixed top-0 -z-20'
-          style={{
-            background: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('${bgSpaceImgcom}')`,
-            backgroundSize: "cover",
-          }}
-        />
-      )}
-      <About />
-      <RoadmapNew />
-      <Speciality />
-      <Team />
-      <Utility />
-      <Faq playSound={playSound} />
-      <FooterBg />
+      <motion.div>
+        <Home />
+        <NavbarHome />
+        {width <= 500 && (
+          <div
+            className='h-screen w-screen fixed top-0 -z-20'
+            style={{
+              background: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('${bgSpaceImgcom}')`,
+              backgroundSize: "cover",
+            }}
+          />
+        )}
+        <About />
+        <RoadmapNew />
+        <Speciality />
+        <Team />
+        <Utility />
+        <Faq playSound={playSound} />
+        <FooterBg />
+      </motion.div>
     </>
   );
 };

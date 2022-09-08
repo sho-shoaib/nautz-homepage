@@ -76,7 +76,7 @@ const NavbarHome = () => {
               </a>
 
               <a
-                href='https://discord.gg/CGByNHYQcd'
+                href='https://discord.gg/nautz'
                 target='_blank'
                 rel='noreferrer'
                 style={{ marginTop: "4px" }}
@@ -119,7 +119,7 @@ const NavbarHome = () => {
                 </a>
 
                 <a
-                  href='https://discord.gg/CGByNHYQcd'
+                  href='https://discord.gg/nautz'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -197,7 +197,7 @@ const NavbarHome = () => {
                 </a>
 
                 <a
-                  href='https://discord.gg/CGByNHYQcd'
+                  href='https://discord.gg/nautz'
                   target='_blank'
                   rel='noreferrer'
                 >
