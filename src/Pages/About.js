@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
-import naut14 from "../assets/compress/naut14.png";
+import naut14 from "../assets/compress/naut14.jpeg";
 import TitleAbout from "../Components/TitleAbout";
 import ParaAbout from "../Components/ParaAbout";
 import GridAbout from "../Components/GridAbout";
 import ButtonStory from "../Components/buttonStory/ButtonStory";
+import Keyword from "../Components/Keyword";
 
 const About = () => {
   const { width } = useWindowDimensions();
@@ -50,14 +51,19 @@ const About = () => {
             </h2>
             <div>
               <h4 className='lg:text-lg md:text-lg sm:text-md xs:text-base font-base md:mb-6 xs:mb-10 w-full text-justify'>
-                Nautz is a collection of 5000 different NFTs, each blended
-                uniquely. The NFTs have been created using ERC 721A, the latest
-                and most efficient smart contract. There will also be an
-                additional 100 NFTs created by various traditional and digital
-                artists, including 2D and 3D creators, painters, photographers,
-                and musicians. Moreover, minting will be in two phases, presale
-                (only for whitelisted wallets) and public sale, which will be
-                for everyone.
+                Nautz is a laboratory of cosmic intelligence where the platter
+                is full of opportunities. Along with stimulating a revolutionary
+                change in digital assets, the Nautz retains its being in its
+                utilities. It covers various umbrellas that define its
+                filtration in the system and a roadmap designed for community
+                privileges. 5000 different NFTs, each blended uniquely. The NFTs
+                have been created using ERC 721A, the latest and most efficient
+                smart contract. There will also be an additional 100 NFTs
+                created by various traditional and digital artists, including 2D
+                and 3D creators, painters, photographers, and musicians.
+                Moreover, minting will be in two phases, presale (only for
+                whitelisted wallets) and public sale, which will be for
+                everyone.
               </h4>
             </div>
           </motion.div>

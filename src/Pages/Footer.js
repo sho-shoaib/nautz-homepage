@@ -73,7 +73,7 @@ const Footer = () => {
       {width > 900 && (
         <Container className='w-full flex md:flex-row xs:flex-col justify-between py-14 md:gap-10 xs:gap-5'>
           {/* logo and text */}
-          <div className='flex flex-col basis-72 gap-20'>
+          <div className='flex flex-col basis-72 gap-5'>
             <div className='flex flex-col gap-4'>
               <div className='w-36'>
                 <img
@@ -84,9 +84,12 @@ const Footer = () => {
               </div>
               <div>
                 <h2 className='text-justify text-sm'>
-                  Nautz is a collection of 5000 different NFTs each blended in a
-                  unique way. We are using the latest and the most efficient
-                  smart contract that is ERC 721A.
+                  Nautz is a laboratory of cosmic intelligence where the platter
+                  is full of opportunities. Along with stimulating a
+                  revolutionary change in digital assets, the Nautz retains its
+                  being in its utilities. It covers various umbrellas that
+                  define its filtration in the system and a roadmap designed for
+                  community privileges. See you on the otherside!
                 </h2>
               </div>
             </div>
@@ -241,9 +244,12 @@ const Footer = () => {
               </div>
               <div>
                 <h2 className='text-justify text-sm'>
-                  Nautz is a collection of 5000 different NFTs each blended in a
-                  unique way. We are using the latest and the most efficient
-                  smart contract that is ERC 721A.
+                  Nautz is a laboratory of cosmic intelligence where the platter
+                  is full of opportunities. Along with stimulating a
+                  revolutionary change in digital assets, the Nautz retains its
+                  being in its utilities. It covers various umbrellas that
+                  define its filtration in the system and a roadmap designed for
+                  community privileges. See you on the otherside!
                 </h2>
               </div>
             </div>

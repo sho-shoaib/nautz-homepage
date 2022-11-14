@@ -15,11 +15,11 @@ import { Link } from "react-scroll";
 const data = [
   {
     ques: "When will the NAUTZ launch?",
-    ans: "When NAUTZ rockets are fueled.",
+    ans: "The year is fast approaching, and so is the launch.\nDates will be announced soon...\nStaytuned!",
   },
   {
-    ques: "How much will be the floor price?",
-    ans: "Its NAUTZ my friend sky is the new floor.",
+    ques: "What will be the mint price of Nautz?",
+    ans: "TBA",
   },
   {
     ques: "Does Nautz have utilities?",
@@ -78,15 +78,16 @@ const Faq = ({ playSound }) => {
             </AccordionSummary>
             <AccordionDetails>
               <h5 className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
-                You can mint it right here on this website, and the listings
-                will be available on{" "}
+                You can mint it right here on this website as well as with our
+                partnered wallets (TBA), and the listings will be available on{" "}
                 <a
                   href='https://opensea.io/collection/nautz'
                   className='text-indigo-300 underline-offset-1 underline'
                   target='_blank'
                 >
-                  Opensea.io
-                </a>
+                  opensea
+                </a>{" "}
+                along with our partnered marketplaces (TBA).
               </h5>
             </AccordionDetails>
           </Accordion>
@@ -115,16 +116,17 @@ const Faq = ({ playSound }) => {
                     </button>
                   ) : custom ? (
                     <h5 className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>
-                      The utilities are the highlight of Nautz! Check our
+                      Our project comes along with tons of exciting utilities!
                       <Link
                         activeClass='active'
                         to='roadmap'
                         spy={true}
                         smooth={true}
-                        className='text-indigo-300 underline-offset-1 underline inline-block ml-2 cursor-pointer'
+                        className='text-indigo-300 underline-offset-1 underline inline-block ml-2 cursor-pointer mr-2'
                       >
-                        <p>Roadmap</p>
+                        <p>scroll up </p>
                       </Link>
+                      to check them out.
                     </h5>
                   ) : (
                     <h5 className='lg:text-lg md:text-lg sm:text-lg xs:text-base'>

@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
+import Keyword from "../Components/Keyword";
 
 const RoadmapMob = () => {
   const { width } = useWindowDimensions();
@@ -76,7 +77,16 @@ const RoadmapMob = () => {
                       <li>5 ETH Giveaway to our community</li>
                       <li>Limited edition merch giveaway to every HODLer</li>
                       <li>Tree plantation under the name of each NFT holder</li>
-                      <li>24 HODLers will get an invite to the Nautz Bunker</li>
+                      <li>
+                        24 HODLers will get an invite to the{" "}
+                        <Keyword
+                          desc={
+                            "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                          }
+                        >
+                          Nautz Bunker
+                        </Keyword>
+                      </li>
                       <li>Pre-sale access to accessories</li>
                     </ul>
                   </div>
@@ -100,14 +110,30 @@ const RoadmapMob = () => {
                       </p>
                     )}
                     <ul className='list-disc pl-3'>
-                      <li>Entry to exclusive holder's club</li>
+                      <li>
+                        Entry to{" "}
+                        <Keyword
+                          desc={
+                            "Exclusive holder's club is group of rare Naut hodlers where they get access to invite-only premium experience."
+                          }
+                        >
+                          exclusive holder's club
+                        </Keyword>
+                      </li>
                       <li>5 ETH Giveaway to our community</li>
                       <li>
                         Sponsoring 3 college scholarships for aeronotical
                         engineering and space studies
                       </li>
                       <li>
-                        Value exchange program initiation in the Nautz Bunker
+                        Value exchange program initiation in the{" "}
+                        <Keyword
+                          desc={
+                            "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                          }
+                        >
+                          Nautz Bunker
+                        </Keyword>
                       </li>
                       <li>PS5 giveaway</li>
                     </ul>
@@ -134,9 +160,17 @@ const RoadmapMob = () => {
                     <ul className='list-disc pl-3'>
                       <li>5 ETH Giveaway to our community</li>
                       <li>
-                        NAUTZ shorts with commercial rights, NOASIS announcement
+                        NAUTZ shorts with commercial rights,{" "}
+                        <Keyword desc={"Nautz ecosystem"}>NOASIS</Keyword>{" "}
+                        announcement
                       </li>
-                      <li>Invitations to nautzpops all over the globe</li>
+                      <li>
+                        Invitations to{" "}
+                        <Keyword desc={"Global Nautz popup events."}>
+                          nautzpops
+                        </Keyword>{" "}
+                        all over the globe
+                      </li>
                       <li>MacBook pro giveaway</li>
                       <li>NAUTZ sponsorship program</li>
                     </ul>
@@ -161,7 +195,17 @@ const RoadmapMob = () => {
                       </p>
                     )}
                     <ul className='list-disc pl-3'>
-                      <li>Free trip to NASA Dubai to our top 5% HODLers</li>
+                      <li>
+                        Free trip to{" "}
+                        <a
+                          href='https://www.kennedyspacecenter-tickets.com/?gclid=Cj0KCQjwpeaYBhDXARIsAEzItbEKilZVpRvrS9CW7BtEUBurowFi5AKFOWfw3r5TMUU9tp3pMZztdp8aAv1sEALw_wcB'
+                          target='_blank'
+                          className='text-sp'
+                        >
+                          Nasa Dubai
+                        </a>{" "}
+                        to our top 5% HODLers
+                      </li>
                       <li>Sending all 5000 NFTs to space</li>
                       <li>Launch our own marketplace</li>
                       <li>Launch NAUTZ P2E game</li>
@@ -184,7 +228,16 @@ const RoadmapMob = () => {
                 <li>5 ETH Giveaway to our community</li>
                 <li>Limited edition merch giveaway to every HODLer</li>
                 <li>Tree plantation under the name of each NFT holder</li>
-                <li>24 HODLers will get an invite to the Nautz Bunker</li>
+                <li>
+                  24 HODLers will get an invite to the{" "}
+                  <Keyword
+                    desc={
+                      "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                    }
+                  >
+                    Nautz Bunker
+                  </Keyword>
+                </li>
                 <li>Pre-sale access to accessories</li>
               </ul>
             </div>
@@ -198,13 +251,31 @@ const RoadmapMob = () => {
                 50%
               </p>
               <ul className='list-disc pl-3'>
-                <li>Entry to exclusive holder's club</li>
+                <li>
+                  Entry to{" "}
+                  <Keyword
+                    desc={
+                      "Exclusive holder's club is group of rare Naut hodlers where they get access to invite-only premium experience."
+                    }
+                  >
+                    exclusive holder's club
+                  </Keyword>
+                </li>
                 <li>5 ETH Giveaway to our community</li>
                 <li>
                   Sponsoring 3 college scholarships for aeronotical engineering
                   and space studies
                 </li>
-                <li>Value exchange program initiation in the Nautz Bunker</li>
+                <li>
+                  Value exchange program initiation in the{" "}
+                  <Keyword
+                    desc={
+                      "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                    }
+                  >
+                    Nautz Bunker
+                  </Keyword>
+                </li>
                 <li>PS5 giveaway</li>
               </ul>
             </div>
@@ -220,9 +291,17 @@ const RoadmapMob = () => {
               <ul className='list-disc pl-3'>
                 <li>5 ETH Giveaway to our community</li>
                 <li>
-                  NAUTZ shorts with commercial rights, NOASIS announcement
+                  NAUTZ shorts with commercial rights,{" "}
+                  <Keyword desc={"Nautz ecosystem."}>NOASIS</Keyword>{" "}
+                  announcement
                 </li>
-                <li>Invitations to nautzpops all over the globe</li>
+                <li>
+                  Invitations to{" "}
+                  <Keyword desc={"Global Nautz popup events."}>
+                    nautzpops
+                  </Keyword>{" "}
+                  all over the globe
+                </li>
                 <li>MacBook pro giveaway</li>
                 <li>NAUTZ sponsorship program</li>
               </ul>
@@ -237,7 +316,17 @@ const RoadmapMob = () => {
                 100%
               </p>
               <ul className='list-disc pl-3'>
-                <li>Free trip to NASA Dubai to our top 5% HODLers</li>
+                <li>
+                  Free trip to{" "}
+                  <a
+                    href='https://www.kennedyspacecenter-tickets.com/?gclid=Cj0KCQjwpeaYBhDXARIsAEzItbEKilZVpRvrS9CW7BtEUBurowFi5AKFOWfw3r5TMUU9tp3pMZztdp8aAv1sEALw_wcB'
+                    target='_blank'
+                    className='text-sp'
+                  >
+                    Nasa Dubai
+                  </a>{" "}
+                  to our top 5% HODLers
+                </li>
                 <li>Sending all 5000 NFTs to space</li>
                 <li>Launch our own marketplace</li>
                 <li>Launch NAUTZ P2E game</li>

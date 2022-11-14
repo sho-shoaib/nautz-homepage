@@ -181,3 +181,7 @@
 #infographic .two article.active header {
   border-bottom-left-radius: 0;
 }
+
+.text-hover {
+  text-shadow: 0 0 7px rgb(255 255 255 / 10%), 0 0 10px rgb(255 255 255 / 30%), 0 0 21px rgb(255 255 255 / 20%), 0 0 82px rgb(255 255 255 / 10%)
+}

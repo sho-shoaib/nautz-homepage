@@ -275,24 +275,25 @@ canvas {
   height: 100vh;
 }
 
-/* button {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid white;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  padding: 0.5rem 0.9em;
-  background: #000000;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all .3s;
+.text-sp {
+  background: #CB60B3;
+background: linear-gradient(to right, #CB60B3 0%, #C146A1 50%, #A80077 51%, #DB36A4 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
-button:hover {
-  background: #ffffff;
-  color: #000000;
-} */
+.purple-grad {
+  background-image: linear-gradient(
+  45deg,
+  hsl(326deg 81% 40%) 0%,
+  hsl(328deg 86% 38%) 11%,
+  hsl(330deg 89% 35%) 22%,
+  hsl(333deg 90% 33%) 33%,
+  hsl(335deg 90% 32%) 44%,
+  hsl(338deg 88% 30%) 56%,
+  hsl(342deg 85% 29%) 67%,
+  hsl(345deg 82% 27%) 78%,
+  hsl(349deg 79% 26%) 89%,
+  hsl(353deg 75% 24%) 100%
+);
+}

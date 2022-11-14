@@ -4,9 +4,13 @@ import icon3 from "../../assets/compress/planet-3.png";
 import icon1 from "../../assets/compress/planet-1.png";
 import icon2 from "../../assets/compress/planet-2.png";
 import useWindowDimensions from "../getWindowDimensions";
+import { useState } from "react";
+import Keyword from "../Keyword";
 
 function App() {
   const { width } = useWindowDimensions();
+  const [hovering1, setHovering1] = useState(false);
+  const [hovering2, setHovering2] = useState(false);
 
   return (
     <>
@@ -59,7 +63,14 @@ function App() {
               <header className='flex items-center '>
                 <i className='fas fa-meteor'></i>
                 <h6 className='text-white font-semibold text-base'>
-                  24 HODLers will get an invite to the Nautz Bunker
+                  24 HODLers will get an invite to the{" "}
+                  <Keyword
+                    desc={
+                      "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                    }
+                  >
+                    Nautz Bunker
+                  </Keyword>
                 </h6>
               </header>
             </article>
@@ -82,7 +93,14 @@ function App() {
               <header className='flex items-center'>
                 <i className='fas fa-cookie-bite'></i>
                 <h6 className='text-white text-base'>
-                  Entry to exclusive holder's club
+                  Entry to{" "}
+                  <Keyword
+                    desc={
+                      "Exclusive holder's club is group of rare Naut hodlers where they get access to invite-only premium experience."
+                    }
+                  >
+                    exclusive holder's club
+                  </Keyword>
                 </h6>
               </header>
             </article>
@@ -107,7 +125,14 @@ function App() {
               <header className='flex items-center'>
                 <i className='fas fa-cookie-bite'></i>
                 <h6 className='text-white text-base'>
-                  Value exchange program initiation in the Nautz Bunker
+                  Value exchange program initiation in the{" "}
+                  <Keyword
+                    desc={
+                      "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                    }
+                  >
+                    Nautz Bunker
+                  </Keyword>
                 </h6>
               </header>
             </article>
@@ -136,7 +161,9 @@ function App() {
               <header className='flex items-center text-danger'>
                 <i className='fas fa-dragon'></i>
                 <h6 className='text-white text-base font-semibold'>
-                  NAUTZ shorts with commercial rights, NOASIS announcement
+                  NAUTZ shorts with commercial rights,{" "}
+                  <Keyword desc={"Nautz ecosystem"}>NOASIS</Keyword>{" "}
+                  announcement
                 </h6>
               </header>
             </article>
@@ -144,7 +171,11 @@ function App() {
               <header className='flex items-center text-danger'>
                 <i className='fas fa-dragon'></i>
                 <h6 className='text-white text-base font-semibold'>
-                  Invitations to nautzpops all over the globe
+                  Invitations to{" "}
+                  <Keyword desc={"Global Nautz popup events."}>
+                    nautzpops
+                  </Keyword>{" "}
+                  all over the globe
                 </h6>
               </header>
             </article>
@@ -175,7 +206,7 @@ function App() {
               <header className='flex items-center'>
                 <i className='fas fa-cookie-bite'></i>
                 <h6 className='text-white text-base'>
-                  Free trip to NASA Dubai to our top 5% HODLers
+                  Free trip to Nasa Dubai to our top 5% HODLers
                 </h6>
               </header>
             </article>
@@ -265,7 +296,14 @@ function App() {
                   <header className='flex items-center '>
                     <i className='fas fa-meteor'></i>
                     <h6 className='text-white font-semibold text-base'>
-                      24 HODLers will get an invite to the Nautz Bunker
+                      24 HODLers will get an invite to the{" "}
+                      <Keyword
+                        desc={
+                          "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                        }
+                      >
+                        Nautz Bunker
+                      </Keyword>
                     </h6>
                   </header>
                 </article>
@@ -292,7 +330,14 @@ function App() {
                   <header className='flex items-center'>
                     <i className='fas fa-cookie-bite'></i>
                     <h6 className='text-blue-500 text-base'>
-                      Entry to exclusive holder's club
+                      Entry to{" "}
+                      <Keyword
+                        desc={
+                          "Exclusive holder's club is group of rare Naut hodlers where they get access to invite-only premium experience."
+                        }
+                      >
+                        exclusive holder's club
+                      </Keyword>
                     </h6>
                   </header>
                 </article>
@@ -317,7 +362,14 @@ function App() {
                   <header className='flex items-center'>
                     <i className='fas fa-cookie-bite'></i>
                     <h6 className='text-blue-500 text-base'>
-                      Value exchange program initiation in the Nautz Bunker
+                      Value exchange program initiation in the{" "}
+                      <Keyword
+                        desc={
+                          "Nautz Bunker is basically applied version of stack internship where we help you to convert your ideas into reality."
+                        }
+                      >
+                        Nautz Bunker
+                      </Keyword>
                     </h6>
                   </header>
                 </article>
@@ -350,7 +402,9 @@ function App() {
                   <header className='flex items-center text-danger'>
                     <i className='fas fa-dragon'></i>
                     <h6 className='text-blue-600 text-base font-semibold'>
-                      NAUTZ shorts with commercial rights, NOASIS announcement
+                      NAUTZ shorts with commercial rights,{" "}
+                      <Keyword desc={"Nautz ecosystem."}>NOASIS</Keyword>{" "}
+                      announcement
                     </h6>
                   </header>
                 </article>
@@ -358,7 +412,11 @@ function App() {
                   <header className='flex items-center text-danger'>
                     <i className='fas fa-dragon'></i>
                     <h6 className='text-blue-600 text-base font-semibold'>
-                      Invitations to nautzpops all over the globe
+                      Invitations to{" "}
+                      <Keyword desc={"Global Nautz popup events."}>
+                        nautzpops
+                      </Keyword>{" "}
+                      all over the globe
                     </h6>
                   </header>
                 </article>
@@ -393,7 +451,7 @@ function App() {
                   <header className='flex items-center'>
                     <i className='fas fa-cookie-bite'></i>
                     <h6 className='text-blue-700 text-base'>
-                      Free trip to NASA Dubai to our top 5% HODLers
+                      Free trip to Nasa Dubai to our top 5% HODLers
                     </h6>
                   </header>
                 </article>
